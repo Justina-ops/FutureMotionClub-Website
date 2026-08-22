@@ -1,0 +1,861 @@
+.page-content-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.about-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* ALIGNMENT PANELS */
+.split-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  align-items: stretch;
+}
+
+.split-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.split-col h2 {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+}
+
+.split-col p {
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.chart-container {
+  max-width: 1200px;
+  margin: 4rem auto 2rem;
+  padding: 0 0 2rem;
+}
+
+.chart-header {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.chart-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+}
+
+.committee-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.profile-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.profile-card:hover {
+  border-color: rgba(0, 191, 255, 0.7) !important;
+  box-shadow: 0 0 50px rgba(0, 191, 255, 0.4),
+    inset 0 0 40px rgba(0, 191, 255, 0.2),
+    0 0 80px rgba(138, 43, 226, 0.2);
+  transform: translateY(-12px) scale(1.03);
+  background: linear-gradient(135deg,
+      rgba(30, 30, 30, 1) 0%,
+      rgba(20, 20, 20, 0.8) 100%) !important;
+}
+
+.profile-avatar-placeholder {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  color: var(--primary-blue);
+  font-size: 1.35rem;
+}
+
+.profile-card h3 {
+  font-size: 1.45rem;
+  color: var(--white);
+  margin: 0 0 0.35rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-card .role-badge {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-blue);
+  background: rgba(0, 191, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+
+.profile-card p {
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .split-row {
+    flex-direction: column !important;
+  }
+}
+
+
+
+/* ABOUT PAGE CONTENT — page-specific only */
+.about-highlights {
+  margin: 0 auto 4rem;
+  padding: 2.75rem 0;
+}
+
+.about-highlights-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 2rem;
+}
+
+.about-highlights-header h2 {
+  color: var(--white);
+  font-size: 2.25rem;
+  margin: 0 0 .6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-highlights-header p {
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.about-highlight-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem;
+  min-height: 210px;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+.about-highlight-card:hover {
+  border-color: var(--primary-blue);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 191, 255, .1);
+}
+
+.about-highlight-number {
+  display: inline-block;
+  color: var(--primary-blue);
+  font-family: "Orbitron", sans-serif;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  margin-bottom: .8rem;
+}
+
+.about-highlight-card h3 {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.35rem;
+  margin: 0 0 .65rem;
+}
+
+.about-highlight-card p {
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  font-size: .92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-highlight-card {
+    min-height: 0;
+  }
+}
+
+/* COMMITTEE PHOTO INSIDE THE EXISTING CIRCLE */
+.profile-avatar-placeholder {
+  overflow: hidden;
+}
+
+.profile-avatar-placeholder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* PAGE-SPECIFIC BACK-TO-TOP BUTTON — do not move to shared CSS */
+.scroll-top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1200;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 50%;
+  background: rgba(5, 7, 11, 0.9);
+  color: var(--primary-blue);
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity .25s ease, visibility .25s ease, transform .25s ease, background .25s ease, color .25s ease;
+  box-shadow: 0 0 18px rgba(0, 191, 255, 0.16);
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover,
+.scroll-top-btn:focus-visible {
+  background: var(--primary-blue);
+  color: #000;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .scroll-top-btn {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+
+/* =========================================================
+   Merged page-specific fixes from about-page-fix.css
+   ========================================================= */
+
+/* =========================================================
+   ABOUT PAGE-ONLY LIGHT MODE + VIDEO/API/SOCIAL STYLES
+   Does not modify shared style.css or nav.js.
+   ========================================================= */
+
+/* about-bg.css contains hard-coded dark colors, so these
+   page-local overrides restore the shared theme tokens. */
+[data-theme="light"].about-page,
+[data-theme="light"] body.about-page {
+  background: var(--bg) !important;
+}
+
+[data-theme="light"] body.about-page::before {
+  background-image:
+    linear-gradient(0deg, rgba(0, 144, 199, .07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 144, 199, .07) 1px, transparent 1px);
+}
+
+[data-theme="light"] .profile-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .96), rgba(245, 248, 250, .92)) !important;
+  color: var(--white);
+}
+
+[data-theme="light"] .profile-card:hover {
+  background: linear-gradient(135deg, #ffffff, #f3f7f9) !important;
+}
+
+[data-theme="light"] .scroll-top-btn {
+  background: rgba(255, 255, 255, .92);
+}
+
+/* Social sharing */
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+
+
+/* ABOUT SOCIAL SHARE */
+.about-social-section {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 3rem 1.5rem;
+}
+
+.about-social-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(0, 191, 255, .08), rgba(138, 43, 226, .08));
+}
+
+.about-social-kicker {
+  color: var(--primary-blue);
+  font-family: "Orbitron", sans-serif;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.about-social-panel h2 {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  margin: .45rem 0 .5rem;
+}
+
+.about-social-panel p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 650px;
+}
+
+.about-social-panel .social-buttons {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .about-social-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* =========================================================
+   LIGHT MODE FIXES — Core Values + From Idea to Showcase
+   Keep page-specific so shared style.css remains untouched.
+   ========================================================= */
+[data-theme="light"] .values-section,
+[data-theme="light"] .timeline-section {
+  background: transparent;
+}
+
+[data-theme="light"] .value-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .98), rgba(248, 250, 252, .96)) !important;
+  border-color: var(--border);
+  box-shadow: 0 8px 24px rgba(16, 20, 24, .06);
+}
+
+[data-theme="light"] .value-card:hover {
+  background: #ffffff !important;
+  box-shadow: 0 12px 30px rgba(0, 144, 199, .14);
+}
+
+[data-theme="light"] .timeline-section {
+  background: linear-gradient(135deg, rgba(0, 144, 199, .055), rgba(138, 43, 226, .045));
+  border-top-color: var(--border);
+}
+
+[data-theme="light"] .timeline-content {
+  background: rgba(255, 255, 255, .96) !important;
+  border-color: var(--border);
+  box-shadow: 0 8px 24px rgba(16, 20, 24, .06);
+}
+
+[data-theme="light"] .timeline-content:hover {
+  background: #ffffff !important;
+  border-color: var(--primary-blue);
+  box-shadow: 0 12px 30px rgba(0, 144, 199, .14);
+}
+
+[data-theme="light"] .timeline-container::before {
+  background: linear-gradient(180deg, transparent, var(--primary-blue), transparent);
+}
+
+/* MOBILE RESPONSIVE REFINEMENTS — About page only */
+@media (max-width: 768px) {
+  .about-layout {
+    padding: 2.5rem .9rem 3rem;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem;
+    line-height: 1.05;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .split-row {
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .split-col {
+    min-width: 0;
+  }
+
+  .chart-container {
+    margin-top: 2.5rem;
+  }
+
+  .chart-header {
+    font-size: 2rem;
+  }
+
+  .committee-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .values-section,
+  .timeline-section {
+    padding: 3rem .9rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-header,
+  .values-header {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .timeline-container::before {
+    left: 14px;
+  }
+
+  .timeline-item {
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+  }
+
+  .timeline-marker {
+    width: auto;
+    min-width: 0;
+    align-self: flex-start;
+    padding: .65rem .8rem;
+    border-radius: 999px;
+    font-size: .72rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .timeline-content p {
+    font-size: .92rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .values-section,
+  .timeline-section {
+    padding-left: .7rem;
+    padding-right: .7rem;
+  }
+
+  .timeline-item {
+    display: block;
+    margin-left: 0;
+  }
+
+  .timeline-container::before {
+    display: none;
+  }
+
+  .timeline-marker {
+    display: inline-flex;
+    margin-bottom: .65rem;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+}
+
+/* Compiled from about-bg.css */
+/* ===================================================================
+    ABOUT PAGE — ENHANCED CYBERPUNK BACKGROUND (v3)
+    Attractive & Dynamic with Team Theme
+    
+   =================================================================== */
+
+/* ===================================================================
+   1. BASE BACKGROUND — Dynamic Dark Cyberpunk
+   =================================================================== */
+
+body {
+  background: linear-gradient(135deg, #0B0B0B 0%, #0D0D0D 50%, #0A0A0A 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Compiled from about-bg.css */
+/* Animated Grid Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(0deg,
+      rgba(0, 191, 255, 0.08) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
+      rgba(0, 191, 255, 0.08) 1px,
+      transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+  animation: gridPulse 6s ease-in-out infinite;
+}
+
+/* Compiled from about-bg.css */
+@keyframes gridPulse {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Compiled from about-bg.css */
+/* ===================================================================
+   2. PRIMARY ACCENT ORBS (Smooth Floating)
+   =================================================================== */
+
+.bg-accent-1 {
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+      rgba(0, 191, 255, 0.4) 0%,
+      rgba(0, 191, 255, 0.15) 35%,
+      transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 1;
+  will-change: transform;
+  animation: floatMain 14s ease-in-out infinite;
+}
+
+/* Compiled from about-bg.css */
+.bg-accent-2 {
+  position: fixed;
+  bottom: -100px;
+  left: -100px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+      rgba(138, 43, 226, 0.3) 0%,
+      rgba(138, 43, 226, 0.12) 45%,
+      transparent 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 1;
+  will-change: transform;
+  animation: floatSecondary 18s ease-in-out infinite;
+}
+
+/* Compiled from about-bg.css */
+/* ===================================================================
+   3. FLOATING ANIMATIONS (GPU-Accelerated)
+   =================================================================== */
+
+@keyframes floatMain {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(-40px, 40px) scale(1.05);
+  }
+
+  50% {
+    transform: translate(-20px, 15px) scale(0.95);
+  }
+
+  75% {
+    transform: translate(30px, -35px) scale(1.08);
+  }
+}
+
+/* Compiled from about-bg.css */
+@keyframes floatSecondary {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(50px, -50px) scale(0.98);
+  }
+
+  50% {
+    transform: translate(25px, -30px) scale(1.06);
+  }
+
+  75% {
+    transform: translate(-40px, 45px) scale(1.02);
+  }
+}
+
+/* Compiled from about-bg.css */
+/* ===================================================================
+   4. ENHANCED HEADER STYLING
+   =================================================================== */
+
+.about-header h1 {
+  text-shadow:
+    0 0 30px rgba(0, 191, 255, 0.6),
+    0 0 60px rgba(0, 191, 255, 0.3),
+    0 0 90px rgba(0, 191, 255, 0.15) !important;
+  animation: titlePulse 3s ease-in-out infinite;
+}
+
+/* Compiled from about-bg.css */
+@keyframes titlePulse {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 30px rgba(0, 191, 255, 0.6),
+      0 0 60px rgba(0, 191, 255, 0.3),
+      0 0 90px rgba(0, 191, 255, 0.15);
+  }
+
+  50% {
+    text-shadow:
+      0 0 40px rgba(0, 191, 255, 0.8),
+      0 0 80px rgba(0, 191, 255, 0.5),
+      0 0 120px rgba(0, 191, 255, 0.25);
+  }
+}
+
+/* Compiled from about-bg.css */
+/* ===================================================================
+   5. CARD STYLING WITH HOVER GLOW
+   =================================================================== */
+
+.profile-card {
+  border: 2px solid rgba(0, 191, 255, 0.35) !important;
+  background: linear-gradient(135deg,
+      rgba(21, 21, 21, 0.9) 0%,
+      rgba(15, 15, 15, 0.7) 100%) !important;
+  box-shadow:
+    0 0 30px rgba(0, 191, 255, 0.2),
+    inset 0 0 30px rgba(0, 191, 255, 0.08),
+    0 0 60px rgba(138, 43, 226, 0.1);
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Compiled from about-bg.css */
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      rgba(0, 191, 255, 0.15) 0%,
+      transparent 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+/* Compiled from about-bg.css */
+.profile-card:hover::before {
+  opacity: 1;
+}
+
+/* Compiled from about-bg.css */
+/* ===================================================================
+   6. SCROLL REVEAL
+   Shared reveal styles live in css/scroll-animations.css.
+   Keep this page background file free of reveal overrides.
+   =================================================================== */
+
+/* ===================================================================
+   8. RESPONSIVE DESIGN
+   =================================================================== */
+
+@media (max-width: 768px) {
+  .bg-accent-1 {
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    right: -150px;
+    filter: blur(50px);
+  }
+
+  .bg-accent-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -180px;
+    left: -180px;
+    filter: blur(60px);
+  }
+
+  body::before {
+    background-size: 35px 35px;
+  }
+}
+
+/* Compiled responsive rules from about-bg.css */
+@media (max-width: 768px) {
+  .bg-accent-1 {
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    right: -150px;
+    filter: blur(50px);
+  }
+
+  .bg-accent-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -180px;
+    left: -180px;
+    filter: blur(60px);
+  }
+
+  body::before {
+    background-size: 35px 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-accent-1 {
+    width: 250px;
+    height: 250px;
+    top: -100px;
+    right: -100px;
+    filter: blur(45px);
+  }
+
+  .bg-accent-2 {
+    width: 300px;
+    height: 300px;
+    bottom: -120px;
+    left: -120px;
+    filter: blur(55px);
+  }
+
+  body::before {
+    background-size: 25px 25px;
+    opacity: 0.5;
+  }
+
+  .profile-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+/* Match the shared Multimedia title alignment used by the other pages.
+   The About content wrapper is centered for the page sections, but the
+   title hero should span the viewport so its left edge follows the shared
+   .mm-hero padding instead of being centered inside the 1200px wrapper. */
+.about-layout>.mm-hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Match the shared Multimedia title eyebrow color. */
+.about-page .mm-hero .eyebrow {
+  color: #00bfff;
+}
+
+/* Improve hero subtitle line spacing without changing shared style.css. */
+.mm-hero .hero-text {
+  line-height: 1.65;
+}

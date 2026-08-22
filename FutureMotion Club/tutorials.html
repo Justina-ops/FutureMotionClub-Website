@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tutorials — FutureMotion Club</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/event-bg.css">
+  <link rel="stylesheet" href="css/tutorials.css">
+</head>
+
+<body>
+
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+
+  <div class="future-sparkles"></div>
+  <div class="future-sparkles"></div>
+
+  <div class="future-grid"></div>
+  <div class="future-particles"></div>
+
+  <div class="future-hud hud-top-left"></div>
+  <div class="future-hud hud-top-right"></div>
+  <div class="future-hud hud-bottom-left"></div>
+  <div class="future-hud hud-bottom-right"></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Toggle music">
+    <!-- Volume Off -->
+    <svg id="volumeOffIcon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+
+    <!-- Volume On -->
+    <svg id="volumeOnIcon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+      <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+      <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+    </svg>
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="music/01-Amazing-Full-Track-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="mm-header">
+
+    <a class="mm-logo" href="index.html">
+      FUTURE<span>MOTION</span>
+    </a>
+
+    <button class="mm-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <i></i>
+      <i></i>
+      <i></i>
+    </button>
+
+    <nav class="mm-nav" id="mmNav">
+
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="gallery.html">GALLERY</a>
+      <a class="active" href="tutorials.html">TUTORIALS</a>
+      <a href="events.html">EVENTS</a>
+      <a href="multimedia.html">MULTIMEDIA</a>
+      <a href="contact.html">CONTACT</a>
+
+    </nav>
+
+    <button class="mm-theme" id="themeToggle" type="button">
+      ☾ <span>DARK</span>
+    </button>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section class="mm-hero mm-page" id="hero">
+    <div class="hero-stars"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-orbit one"></div>
+    <div class="hero-orbit two"></div>
+
+    <div class="hero-beam b1"></div>
+    <div class="hero-beam b2"></div>
+
+    <div class="hero-copy reveal">
+      <p class="eyebrow">LEARN. CREATE. INSPIRE.</p>
+
+      <h1>
+        TUTORIALS
+        <em>HUB</em>
+      </h1>
+
+      <p class="hero-text">
+        Pick up new skills, try cool techniques, and turn your creative ideas into something awesome.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#path">
+          CHOOSE YOUR PATH
+        </a>
+
+        <a class="btn" href="#tutorials">
+          EXPLORE TUTORIALS
+        </a>
+
+        <a class="btn primary" href="#recentlyViewed">
+          RECENTLY VIEWED
+        </a>
+
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img src="Images/Tutorials/tutorial-title.png" alt="FutureMotion multimedia visual">
+
+    </div>
+
+    <div class="hero-side">
+      ANIMATION&nbsp;&nbsp;
+      VIDEO&nbsp;&nbsp;
+      MOTION&nbsp;&nbsp;
+      DESIGN
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CHOOSE YOUR PATH
+  ========================== -->
+
+  <section class="path-section reveal" id="path">
+
+    <div class="path-box reveal">
+
+      <h2 class="section-title reveal">CHOOSE YOUR PATH</h2>
+
+      <div class="path-carousel">
+
+        <button class="path-arrow path-prev" id="pathPrev" aria-label="Previous categories">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18L9 12L15 6"></path>
+          </svg>
+        </button>
+
+        <div class="path-track-wrap">
+
+          <div class="path-track" id="pathTrack">
+
+            <button class="path-card" data-path-filter="video-production">
+              <span class="path-icon" aria-hidden="true">🎬</span>
+              <span class="path-label">Video Production</span>
+            </button>
+
+            <button class="path-card" data-path-filter="2d-animation">
+              <span class="path-icon" aria-hidden="true">✏️</span>
+              <span class="path-label">2D Animation</span>
+            </button>
+
+            <button class="path-card" data-path-filter="3d-vfx">
+              <span class="path-icon" aria-hidden="true">🧊</span>
+              <span class="path-label">3D &amp; VFX</span>
+            </button>
+
+            <button class="path-card" data-path-filter="motion-graphics">
+              <span class="path-icon" aria-hidden="true">📈</span>
+              <span class="path-label">Motion Graphics</span>
+            </button>
+
+            <button class="path-card" data-path-filter="digital-design">
+              <span class="path-icon" aria-hidden="true">🎨</span>
+              <span class="path-label">Digital Design</span>
+            </button>
+
+            <button class="path-card" data-path-filter="audio-multimedia">
+              <span class="path-icon" aria-hidden="true">🎧</span>
+              <span class="path-label">Audio &amp; Multimedia</span>
+            </button>
+
+          </div>
+
+        </div>
+
+        <button class="path-arrow path-next" id="pathNext" aria-label="Next categories">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 18L15 12L9 6"></path>
+          </svg>
+        </button>
+
+      </div>
+
+      <div class="path-dots" id="pathDots"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FEATURED THIS WEEK
+  ========================== -->
+
+  <section class="featured-section reveal">
+
+    <h2 class="section-title glitch-title reveal" data-text="Featured This Week">
+      Featured This Week
+    </h2>
+
+    <div class="featured-card reveal">
+
+      <!-- Featured Video -->
+      <div class="featured-video">
+
+        <iframe src="https://www.youtube.com/embed/IvTXbHLtod4" title="Kinetic Typography Tutorial"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+        </iframe>
+
+      </div>
+
+
+      <!-- Featured Information -->
+      <div class="featured-desc reveal">
+
+        <div class="tutorial-meta">
+
+          <span class="badge category-motion">
+            Motion Graphics
+          </span>
+
+          <span class="badge level intermediate">
+            Intermediate
+          </span>
+
+        </div>
+
+
+        <h3>Kinetic Typography</h3>
+
+
+        <p>
+          Create dynamic animated text by combining timing, movement,
+          and typography principles. A great pick this week for anyone
+          looking to level up their motion graphics skills.
+        </p>
+
+
+        <div class="tutorial-info">
+
+          <div class="info-item">
+
+            <span class="info-label">
+              Duration
+            </span>
+
+            <span class="info-value">
+              3 minutes
+            </span>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <span class="info-label">
+              Required Software
+            </span>
+
+            <span class="info-value">
+              Adobe After Effects
+            </span>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <span class="info-label">
+              Learning Outcomes
+            </span>
+
+            <span class="info-value">
+              Create engaging animated typography with smooth timing
+              and transitions.
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <button class="expand-hint" id="featuredViewLesson" type="button">
+          View full lesson
+          <span class="arrow">→</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       TUTORIAL SECTION
+  ========================== -->
+  <div class="tutorial-section-box reveal" id="tutorials">
+
+    <section class="tutorial-section reveal">
+
+      <h2 class="section-title">
+        Explore
+        <em> Tutorials </em>
+      </h2>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+
+        <!-- SEARCH + SORT -->
+        <div class="filter-top-row">
+
+          <div class="search-box">
+
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+            </svg>
+
+            <input type="text" id="tutorialSearch" placeholder="Search tutorials..." aria-label="Search tutorials">
+
+          </div>
+
+
+          <!-- SORT -->
+          <div class="sort-box">
+            <label for="tutorialSort">Sort by</label>
+
+            <div class="sort-select-wrap">
+              <select id="tutorialSort" class="sort-select">
+                <option value="default">Recommended</option>
+                <option value="duration-asc">Shortest Duration</option>
+                <option value="duration-desc">Longest Duration</option>
+                <option value="level-asc">Beginner → Advanced</option>
+                <option value="level-desc">Advanced → Beginner</option>
+              </select>
+
+              <span class="sort-chevron" aria-hidden="true">⌄</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+        <div class="filter-categories">
+
+          <button class="filter-btn active" data-filter="all">
+            All
+          </button>
+
+          <button class="filter-btn" data-filter="video-production">
+            Video Production
+          </button>
+
+          <button class="filter-btn" data-filter="2d-animation">
+            2D Animation
+          </button>
+
+          <button class="filter-btn" data-filter="3d-vfx">
+            3D &amp; VFX
+          </button>
+
+          <button class="filter-btn" data-filter="motion-graphics">
+            Motion Graphics
+          </button>
+
+          <button class="filter-btn" data-filter="digital-design">
+            Digital Design
+          </button>
+
+          <button class="filter-btn" data-filter="audio-multimedia">
+            Audio &amp; Multimedia
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+          TUTORIAL GRID
+      ========================== -->
+
+      <div class="tutorial-grid">
+
+
+        <!-- =================================
+            1. VIDEO EDITING
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="video-production" data-id="pr-cutting-trimming"
+          data-video="1RljefWUnIk" data-title="Cutting &amp; Trimming Clips"
+          data-desc="Learn the razor tool, ripple trim, and keyboard shortcuts every editor uses to build a rough cut fast."
+          data-credit="5 Ways to Cut &amp; Trim Clips in Premiere Pro — YouTube" data-duration="6"
+          data-level="beginner">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/1RljefWUnIk" title="Premiere Pro: Cutting & Trimming Clips"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-video-production">
+                Video Production
+              </span>
+
+              <span class="badge level beginner">
+                Beginner
+              </span>
+
+            </div>
+
+
+            <h3>
+              Cutting &amp; Trimming Clips
+            </h3>
+
+
+            <p>
+              Learn the razor tool, ripple trim, and keyboard shortcuts
+              every editor uses to build a rough cut fast.
+            </p>
+
+
+            <!-- TUTORIAL INFORMATION -->
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  6 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe Premiere Pro
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Learn how to cut, trim, and organize video clips efficiently.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Import your footage and drag it onto the timeline.
+              </li>
+
+              <li>
+                Use the Razor tool (C) to split a clip at the playhead.
+              </li>
+
+              <li>
+                Trim clip edges by dragging, or use Q / W for ripple trim.
+              </li>
+
+              <li>
+                Delete gaps with the ripple delete shortcut (Shift+Delete).
+              </li>
+
+              <li>
+                Preview your rough cut and adjust pacing.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            2. VIDEO EDITING
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="video-production" data-id="pr-color-grading"
+          data-video="WSDWy9CfAJY" data-title="Color Grading with Lumetri"
+          data-desc="Balance exposure and white balance first, then push a look with the color wheels and curves."
+          data-credit="Premiere Pro Color Grading — Full Walkthrough, YouTube" data-duration="32"
+          data-level="intermediate">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/WSDWy9CfAJY" title="Premiere Pro: Color Grading Basics"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-video-production">
+                Video Production
+              </span>
+
+              <span class="badge level intermediate">
+                Intermediate
+              </span>
+
+            </div>
+
+
+            <h3>
+              Color Grading with Lumetri
+            </h3>
+
+
+            <p>
+              Balance exposure and white balance first, then push a look
+              with the color wheels and curves.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  32 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe Premiere Pro
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Learn basic color correction, grading, and visual consistency.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Open the Lumetri Color panel from Window &gt; Lumetri Color.
+              </li>
+
+              <li>
+                Fix exposure, contrast, and white balance under Basic Correction.
+              </li>
+
+              <li>
+                Use the Color Wheels to shade shadows, midtones, and highlights.
+              </li>
+
+              <li>
+                Apply a subtle Creative look or LUT as a starting point.
+              </li>
+
+              <li>
+                Copy the grade to other clips for a consistent look.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            3. 2D ANIMATION
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="2d-animation" data-id="ae-text-animation"
+          data-video="cxqHMp2th8I" data-title="Text Animation Basics"
+          data-desc="Animate position, opacity, and scale keyframes to make titles feel alive instead of static."
+          data-credit="How to Animate Text in After Effects — Start Here!, YouTube" data-duration="26"
+          data-level="beginner">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/cxqHMp2th8I" title="After Effects: Text Animation Basics"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-2d">
+                2D Animation
+              </span>
+
+              <span class="badge level beginner">
+                Beginner
+              </span>
+
+            </div>
+
+
+            <h3>
+              Text Animation Basics
+            </h3>
+
+
+            <p>
+              Animate position, opacity, and scale keyframes to make
+              titles feel alive instead of static.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  26 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe After Effects
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Create basic animated titles using keyframes and easing.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Create a text layer with the Horizontal Type tool.
+              </li>
+
+              <li>
+                Set a starting keyframe for Position and Opacity at frame 0.
+              </li>
+
+              <li>
+                Move the playhead forward and change the values to animate.
+              </li>
+
+              <li>
+                Add Easy Ease (F9) to smooth the motion curve.
+              </li>
+
+              <li>
+                Fine-tune timing in the Graph Editor.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            4. MOTION GRAPHICS
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="motion-graphics" data-id="ae-motion-graphics"
+          data-video="MVDsvbajxwY" data-title="Motion Graphics Fundamentals"
+          data-desc="Combine shape layers, trim paths, and parenting to build a clean animated logo sting."
+          data-credit="How to Animate Shape Layers with Trim Paths, YouTube" data-duration="7"
+          data-level="intermediate">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/MVDsvbajxwY" title="After Effects: Motion Graphics Fundamentals"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-motion">
+                Motion Graphics
+              </span>
+
+              <span class="badge level intermediate">
+                Intermediate
+              </span>
+
+            </div>
+
+
+            <h3>
+              Motion Graphics Fundamentals
+            </h3>
+
+
+            <p>
+              Combine shape layers, trim paths, and parenting to build
+              a clean animated logo sting.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  7 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe After Effects
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Create smooth logo animations using shape layers and trim paths.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Build your shapes with the Pen and Shape tools.
+              </li>
+
+              <li>
+                Use Trim Paths to animate lines drawing on screen.
+              </li>
+
+              <li>
+                Parent smaller elements to a null object for group control.
+              </li>
+
+              <li>
+                Add overshoot with expressions or the Graph Editor.
+              </li>
+
+              <li>
+                Render a short 3–5 second loop to test timing.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            5. 3D ANIMATION
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="3d-vfx" data-id="blender-modeling"
+          data-video="VPKa-gBexYY" data-title="3D Modeling for Beginners"
+          data-desc="Get comfortable navigating the viewport and shaping your first mesh with basic modifiers."
+          data-credit="Blender 3D Modeling Course for Absolute Beginners, YouTube" data-duration="120"
+          data-level="beginner">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/VPKa-gBexYY" title="Blender: 3D Modeling for Beginners"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-3d-vfx">
+                3D &amp; VFX
+              </span>
+
+              <span class="badge level beginner">
+                Beginner
+              </span>
+
+            </div>
+
+
+            <h3>
+              3D Modeling for Beginners
+            </h3>
+
+
+            <p>
+              Get comfortable navigating the viewport and shaping your
+              first mesh with basic modifiers.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  2 hours
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Blender
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Create and modify basic 3D models using Blender tools.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Navigate the viewport with the middle mouse button and scroll.
+              </li>
+
+              <li>
+                Add a mesh (Shift+A) and enter Edit Mode (Tab).
+              </li>
+
+              <li>
+                Extrude, scale, and bevel faces to shape your model.
+              </li>
+
+              <li>
+                Add a Subdivision Surface modifier for smooth geometry.
+              </li>
+
+              <li>
+                Apply a simple material and do a quick render preview.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            6. 3D ANIMATION
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="3d-vfx" data-id="blender-rigging"
+          data-video="aLf_KhlpikY" data-title="Character Rigging Basics"
+          data-desc="Set up an armature and weight paint it so your character deforms correctly when animated."
+          data-credit="Blender Rigging Tutorial — Introduction to Armatures, YouTube" data-duration="13"
+          data-level="advanced">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/aLf_KhlpikY" title="Blender: Character Rigging Basics"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-3d-vfx">
+                3D &amp; VFX
+              </span>
+
+              <span class="badge level advanced">
+                Advanced
+              </span>
+
+            </div>
+
+
+            <h3>
+              Character Rigging Basics
+            </h3>
+
+
+            <p>
+              Set up an armature and weight paint it so your character
+              deforms correctly when animated.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  13 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Blender
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Build a basic character rig and prepare a model for animation.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Add an Armature and position bones inside your mesh.
+              </li>
+
+              <li>
+                Name and organize bones into a clear hierarchy.
+              </li>
+
+              <li>
+                Parent the mesh to the armature with Automatic Weights.
+              </li>
+
+              <li>
+                Fix problem areas in Weight Paint mode.
+              </li>
+
+              <li>
+                Test the rig in Pose Mode before animating.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            7. SOFTWARE TUTORIALS
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="digital-design"
+          data-id="software-premiere-basics" data-video="wPXqpEVL2V0" data-title="Premiere Pro Essential Tools"
+          data-desc="Learn the essential Premiere Pro tools and workspace features every beginner editor should know."
+          data-credit="Premiere Pro Beginner Tutorial, YouTube" data-duration="7" data-level="beginner">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/wPXqpEVL2V0" title="Premiere Pro Essential Tools"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-digital-design">
+                Digital Design
+              </span>
+
+              <span class="badge level beginner">
+                Beginner
+              </span>
+
+            </div>
+
+
+            <h3>
+              Premiere Pro Essential Tools
+            </h3>
+
+
+            <p>
+              Learn the essential Premiere Pro tools and workspace
+              features every beginner editor should know.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  7 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe Premiere Pro
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Understand the Premiere Pro interface and essential editing tools.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Open Premiere Pro and create a new project.
+              </li>
+
+              <li>
+                Learn the main panels and workspace layout.
+              </li>
+
+              <li>
+                Import video and audio files into the project.
+              </li>
+
+              <li>
+                Explore the Selection, Razor, Hand, and Zoom tools.
+              </li>
+
+              <li>
+                Save and organize your project correctly.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================
+            8. MOTION GRAPHICS
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="motion-graphics"
+          data-id="motion-kinetic-typography" data-video="IvTXbHLtod4" data-title="Kinetic Typography"
+          data-desc="Create dynamic animated text by combining timing, movement, and typography principles."
+          data-credit="After Effects Text Animation Tutorial, YouTube" data-duration="3" data-level="intermediate">
+
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/IvTXbHLtod4" title="Kinetic Typography Tutorial"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-motion">
+                Motion Graphics
+              </span>
+
+              <span class="badge level intermediate">
+                Intermediate
+              </span>
+
+            </div>
+
+
+            <h3>
+              Kinetic Typography
+            </h3>
+
+
+            <p>
+              Create dynamic animated text by combining timing,
+              movement, and typography principles.
+            </p>
+
+
+            <div class="tutorial-info">
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  3 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe After Effects
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Create engaging animated typography with smooth timing and transitions.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Create and format your text layers.
+              </li>
+
+              <li>
+                Set keyframes for position, scale, and opacity.
+              </li>
+
+              <li>
+                Apply Easy Ease to create smoother movement.
+              </li>
+
+              <li>
+                Synchronize text movement with music or sound effects.
+              </li>
+
+              <li>
+                Preview and refine the final animation.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+        <!-- =================================
+            8. Audio
+        ================================== -->
+
+        <article class="tutorial-card card clickable reveal" data-tool="audio-multimedia"
+          data-id="adobe-audition-beginner" data-video="sBwKEBVeH-w" data-title="Adobe Audition Beginner Tutorial"
+          data-desc="Learn the fundamentals of Adobe Audition, including recording, editing, audio effects, noise reduction, and mixing."
+          data-credit="Adobe Audition Beginner Tutorial, YouTube" data-duration="21" data-level="beginner">
+
+          <div class="video-wrap">
+
+            <iframe src="https://www.youtube.com/embed/sBwKEBVeH-w" title="Adobe Audition Beginner Tutorial"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+            </iframe>
+
+          </div>
+
+
+          <div class="tutorial-body">
+
+
+            <div class="tutorial-meta">
+
+              <span class="badge category-audio">
+                Audio & Multimedia
+              </span>
+
+              <span class="badge level beginner">
+                Beginner
+              </span>
+
+            </div>
+
+
+            <h3>
+              Adobe Audition Beginner Tutorial
+            </h3>
+
+
+            <p>
+              Learn the fundamentals of Adobe Audition by recording,
+              editing, enhancing, and mixing audio for multimedia projects.
+            </p>
+
+
+            <div class="tutorial-info">
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Duration
+                </span>
+
+                <span class="info-value">
+                  21 minutes
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Required Software
+                </span>
+
+                <span class="info-value">
+                  Adobe Audition
+                </span>
+
+              </div>
+
+
+              <div class="info-item">
+
+                <span class="info-label">
+                  Learning Outcomes
+                </span>
+
+                <span class="info-value">
+                  Record, edit, clean up, enhance, and mix audio
+                  for multimedia projects.
+                </span>
+
+              </div>
+
+
+            </div>
+
+
+            <span class="expand-hint">
+
+              View full lesson
+
+              <span class="arrow">
+                →
+              </span>
+
+            </span>
+
+
+            <ol class="tutorial-steps" hidden>
+
+              <li>
+                Explore the Adobe Audition workspace and basic tools.
+              </li>
+
+              <li>
+                Record and import audio into a project.
+              </li>
+
+              <li>
+                Edit audio clips and arrange them on the timeline.
+              </li>
+
+              <li>
+                Apply effects such as noise reduction, EQ, and compression.
+              </li>
+
+              <li>
+                Adjust audio levels and mix multiple tracks.
+              </li>
+
+              <li>
+                Export the finished audio for use in a multimedia project.
+              </li>
+
+            </ol>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <button class="load-all-btn" id="loadAllBtn">
+        Load All
+      </button>
+
+    </section>
+
+  </div>
+
+  <!-- =========================================================
+     RECENTLY VIEWED
+========================================================= -->
+
+  <section class="recently-section reveal" id="recentlyViewed">
+
+    <div class="recently-header">
+
+      <div>
+        <p class="recently-label">YOUR ACTIVITY</p>
+
+        <h2 class="section-title">
+          RECENTLY VIEWED
+        </h2>
+      </div>
+
+      <button type="button" class="recently-clear" id="clearRecentlyViewed">
+        CLEAR
+      </button>
+
+    </div>
+
+
+    <div id="recentlyContent">
+
+      <div class="recently-empty">
+        <span class="recently-empty-icon">◷</span>
+
+        <div>
+          <strong>YOU HAVEN'T WATCHED ANYTHING YET</strong>
+
+          <p>
+            Explore a tutorial and it will appear here.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <p>
+      © 2026
+
+      <span class="accent">
+        FutureMotion Club
+      </span>
+
+      — Animation • Multimedia • Creativity
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       EXPAND LESSON MODAL
+  ========================== -->
+
+  <div class="modal-overlay" id="tutorialModalOverlay">
+
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tutorialModalTitle">
+
+
+      <button class="modal-close" id="tutorialModalClose" aria-label="Close">
+
+        ✕
+
+      </button>
+
+
+      <div class="modal-video-wrap">
+
+        <iframe id="tutorialModalIframe" src="" title=""
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
+        </iframe>
+
+      </div>
+
+
+      <div class="modal-body">
+
+
+        <div class="tutorial-meta" id="tutorialModalBadges">
+        </div>
+
+
+        <h2 id="tutorialModalTitle">
+        </h2>
+
+
+        <p id="tutorialModalDesc">
+        </p>
+
+
+        <p class="video-credit" id="tutorialModalCredit">
+        </p>
+
+        <!-- Social Share -->
+        <div class="modal-share" id="tutorialModalShare">
+        </div>
+
+
+        <!-- Modal Tutorial Information -->
+
+        <div class="tutorial-info" id="tutorialModalInfo">
+
+          <div class="info-item">
+
+            <span class="info-label">
+              Duration
+            </span>
+
+            <span class="info-value" id="tutorialModalDuration">
+            </span>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <span class="info-label">
+              Required Software
+            </span>
+
+            <span class="info-value" id="tutorialModalSoftware">
+            </span>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <span class="info-label">
+              Learning Outcomes
+            </span>
+
+            <span class="info-value" id="tutorialModalOutcome">
+            </span>
+
+          </div>
+
+          <div class="info-item" id="tutorialModalResourceRow" hidden>
+
+            <span class="info-label">
+              Popular Related Project
+            </span>
+
+            <span class="info-value">
+              <a href="#" id="tutorialModalResource" target="_blank" rel="noopener noreferrer"></a>
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <h4 class="modal-subhead">
+          Step-by-step
+        </h4>
+
+
+        <ol class="tutorial-steps" id="tutorialModalSteps">
+        </ol>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <div id="cookieBanner" class="cookie-banner" aria-hidden="true">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <h3>🍪 Cookies & Privacy</h3>
+        <p>
+          We use cookies to remember your preferences and improve your
+          FutureMotion experience.
+        </p>
+      </div>
+
+      <div class="cookie-actions">
+        <button id="declineCookies" class="cookie-btn cookie-decline">
+          Decline
+        </button>
+
+        <button id="acceptCookies" class="cookie-btn cookie-accept">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script src="js/reveal.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/tutorials.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/cookies.js"></script>
+
+</body>
+
+</html>

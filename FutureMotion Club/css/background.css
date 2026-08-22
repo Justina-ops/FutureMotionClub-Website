@@ -1,0 +1,263 @@
+/* ============================================================
+   FUTUREMOTION — INTENSE CYBER GALAXY BACKGROUND
+   ============================================================ */
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--bg);
+    color: var(--white);
+}
+
+
+/* ============================================================
+   LARGE ROTATING GALAXY
+   ============================================================ */
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 1000px;
+    height: 1000px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -3;
+    pointer-events: none;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(0, 191, 255, 0.9) 3%,
+            rgba(0, 191, 255, 0.55) 8%,
+            rgba(0, 191, 255, 0.2) 15%,
+            transparent 30%),
+
+        conic-gradient(from 0deg,
+            transparent 0deg,
+            rgba(0, 191, 255, 0.05) 25deg,
+            rgba(0, 191, 255, 0.65) 55deg,
+            transparent 90deg,
+
+            transparent 130deg,
+            rgba(0, 191, 255, 0.45) 175deg,
+            transparent 220deg,
+
+            rgba(255, 255, 255, 0.15) 260deg,
+            transparent 300deg,
+            rgba(0, 191, 255, 0.55) 340deg,
+            transparent 360deg);
+
+    filter:
+        blur(18px) drop-shadow(0 0 35px var(--primary-blue));
+
+    opacity: 0.8;
+
+    animation:
+        galaxyRotate 18s linear infinite,
+        galaxyPulse 5s ease-in-out infinite alternate;
+}
+
+/* ================================================================
+   FUTUREMOTION — LIGHT MODE CYBER GALAXY
+   ================================================================ */
+
+[data-theme="light"] body {
+    background: var(--bg);
+}
+
+
+/* ================================================================
+   1. SHOOTING STARS — LIGHT MODE
+   ================================================================ */
+
+[data-theme="light"] .future-shooting-star {
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 144, 199, 0.15) 15%,
+            rgba(0, 144, 199, 0.75) 55%,
+            #ffffff 100%);
+
+    box-shadow:
+        0 0 5px rgba(0, 144, 199, 0.45),
+        0 0 12px rgba(0, 144, 199, 0.35),
+        0 0 25px rgba(0, 144, 199, 0.2),
+        0 0 40px rgba(0, 144, 199, 0.1);
+}
+
+
+/* ================================================================
+   2. SPARKLES — LIGHT MODE
+   ================================================================ */
+
+[data-theme="light"] .future-sparkles {
+    background: #0090C7;
+
+    box-shadow:
+
+        /* Top */
+        5vw 10vh 2px rgba(0, 144, 199, 0.55),
+        12vw 18vh 1px rgba(80, 90, 100, 0.35),
+        19vw 8vh 2px rgba(0, 144, 199, 0.5),
+        27vw 16vh 1px rgba(80, 90, 100, 0.3),
+        34vw 6vh 2px rgba(0, 144, 199, 0.55),
+        42vw 20vh 1px rgba(0, 144, 199, 0.45),
+        51vw 11vh 2px rgba(80, 90, 100, 0.3),
+        59vw 7vh 1px rgba(0, 144, 199, 0.5),
+        67vw 17vh 2px rgba(0, 144, 199, 0.55),
+        75vw 9vh 1px rgba(80, 90, 100, 0.3),
+        84vw 21vh 2px rgba(0, 144, 199, 0.5),
+        93vw 13vh 1px rgba(0, 144, 199, 0.45),
+
+        /* Middle */
+        8vw 32vh 1px rgba(0, 144, 199, 0.45),
+        16vw 42vh 2px rgba(80, 90, 100, 0.3),
+        24vw 29vh 1px rgba(0, 144, 199, 0.5),
+        32vw 48vh 2px rgba(0, 144, 199, 0.45),
+        40vw 34vh 1px rgba(80, 90, 100, 0.3),
+        48vw 44vh 2px rgba(0, 144, 199, 0.5),
+        57vw 31vh 1px rgba(0, 144, 199, 0.45),
+        65vw 46vh 2px rgba(80, 90, 100, 0.3),
+        73vw 36vh 1px rgba(0, 144, 199, 0.5),
+        81vw 49vh 2px rgba(0, 144, 199, 0.45),
+        90vw 33vh 1px rgba(80, 90, 100, 0.3),
+
+        /* Bottom */
+        4vw 62vh 2px rgba(0, 144, 199, 0.5),
+        13vw 75vh 1px rgba(80, 90, 100, 0.3),
+        21vw 67vh 2px rgba(0, 144, 199, 0.5),
+        30vw 82vh 1px rgba(0, 144, 199, 0.45),
+        38vw 72vh 2px rgba(80, 90, 100, 0.3),
+        46vw 90vh 1px rgba(0, 144, 199, 0.5),
+        55vw 70vh 2px rgba(0, 144, 199, 0.45),
+        63vw 84vh 1px rgba(80, 90, 100, 0.3),
+        71vw 76vh 2px rgba(0, 144, 199, 0.5),
+        80vw 91vh 1px rgba(0, 144, 199, 0.45),
+        88vw 68vh 2px rgba(80, 90, 100, 0.3),
+        96vw 82vh 1px rgba(0, 144, 199, 0.5);
+}
+
+
+/* Sparkle glow */
+
+[data-theme="light"] .future-sparkles::before {
+    background: #0090C7;
+
+    box-shadow:
+        0 0 5px rgba(0, 144, 199, 0.35),
+        0 0 12px rgba(0, 144, 199, 0.2);
+}
+
+
+/* ================================================================
+   3. LARGE GALAXY — LIGHT MODE
+   ================================================================ */
+
+[data-theme="light"] body::before {
+    width: 1000px;
+    height: 1000px;
+
+    background:
+
+        /* Soft central glow */
+        radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(0, 144, 199, 0.45) 4%,
+            rgba(0, 144, 199, 0.2) 10%,
+            rgba(0, 144, 199, 0.08) 18%,
+            transparent 32%),
+
+        /* Soft cyan galaxy arms */
+        conic-gradient(from 0deg,
+
+            transparent 0deg,
+            rgba(0, 144, 199, 0.025) 25deg,
+            rgba(0, 144, 199, 0.18) 55deg,
+            transparent 90deg,
+
+            transparent 130deg,
+            rgba(0, 144, 199, 0.13) 175deg,
+            transparent 220deg,
+
+            rgba(0, 144, 199, 0.05) 260deg,
+            transparent 300deg,
+
+            rgba(0, 144, 199, 0.15) 340deg,
+            transparent 360deg);
+
+    filter:
+        blur(22px) drop-shadow(0 0 25px rgba(0, 144, 199, 0.12));
+
+    opacity: 0.65;
+
+    animation:
+        galaxyRotate 18s linear infinite,
+        galaxyPulseLight 6s ease-in-out infinite alternate;
+}
+
+
+/* ================================================================
+   4. LIGHT MODE GALAXY PULSE
+   ================================================================ */
+
+@keyframes galaxyPulseLight {
+
+    0% {
+        opacity: 0.45;
+        transform: translate(-50%, -50%) scale(0.96);
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1.02);
+    }
+}
+
+
+/* ================================================================
+   5. LIGHT MODE CONTENT PROTECTION
+   ================================================================ */
+
+/*
+   Keeps the galaxy behind the actual page content
+   and prevents it from becoming too visually strong.
+*/
+
+[data-theme="light"] main,
+[data-theme="light"] section,
+[data-theme="light"] .hero {
+    position: relative;
+}
+
+
+/* ================================================================
+   6. LIGHT MODE CARD / CONTENT GLOW
+   ================================================================ */
+
+[data-theme="light"] .card,
+[data-theme="light"] .event-card,
+[data-theme="light"] .tutorial-card {
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================================================================
+   7. LIGHT MODE SELECTION
+   ================================================================ */
+
+[data-theme="light"] ::selection {
+    background: rgba(0, 144, 199, 0.2);
+    color: #101418;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureMotion Club — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CORRECT LINKS MATCHING YOUR TEAM'S FILES -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/scroll-animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/theme.js"></script>
+</head>
+
+<body class="index-page">
+
+  <div class="future-shooting-star star-1"></div>
+  <div class="future-shooting-star star-2"></div>
+  <div class="future-shooting-star star-3"></div>
+  <div class="future-sparkles"></div>
+
+  <header class="mm-header">
+    <a class="mm-logo" href="index.html">FUTURE<span>MOTION</span></a>
+    <button class="mm-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+    <nav class="mm-nav" id="mmNav">
+      <a class="active" href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="tutorials.html">TUTORIALS</a>
+      <a href="events.html">EVENTS</a>
+      <a href="multimedia.html">MULTIMEDIA</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <button class="mm-theme" id="themeToggle" type="button">☾ <span>DARK</span></button>
+  </header>
+
+  <div class="page-content-wrapper" id="top">
+    <section class="mm-hero mm-page reveal" id="index-title">
+      <div class="hero-stars"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orbit one"></div>
+      <div class="hero-orbit two"></div>
+      <div class="hero-beam b1"></div>
+      <div class="hero-beam b2"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">FUTUREMOTION</p>
+        <h1>FutureMotion<br><em>Club</em></h1>
+        <p class="hero-text">Welcome to the ultimate learning space for digital animation and multimedia design. Explore
+          new skills, build visual showreels, and collaborate with creative students across campus tracks.</p>
+      </div>
+    </section>
+
+    <section class="showcase-container reveal">
+      <h2 class="showcase-header">Featured Animations</h2>
+      <div class="standalone-video-card">
+        <div class="video-wrapper">
+          <video controls autoplay loop muted playsinline
+            style="width:100%; height:100%; object-fit:cover; display:block;">
+            <source src="video/sample.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>2026 FutureMotion Production Reel</h3>
+          <p>The definitive student animation showcase. Highlighting integrated processing pipelines, combining
+            traditional 2D hand-drawn aesthetics with advanced multi-tier 3D environmental design maps compiled across
+            our active studio groups.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="home-api-section reveal" id="home-api" aria-labelledby="home-api-title">
+      <div class="home-api-header">
+        <h2 id="home-api-title">Creative Resources</h2>
+      </div>
+      <div id="homeApiGrid" class="home-api-grid" aria-live="polite"></div>
+    </section>
+
+    <main class="grid-section reveal-group">
+      <div class="teaser-grid">
+        <article class="teaser-card">
+          <h3>Animation Projects</h3>
+          <p>Browse active student showcases, watch trailers, and view 2D and 3D modeling screenshots directly.</p>
+          <a href="projects.html" class="btn-action">View Work</a>
+        </article>
+        <article class="teaser-card">
+          <h3>Video Tutorials</h3>
+          <p>Learn production steps for Premiere Pro, After Effects, and Blender through running walk-through clips.</p>
+          <a href="tutorials.html" class="btn-action">Start Training</a>
+        </article>
+        <article class="teaser-card">
+          <h3>Cross-Media Works</h3>
+          <p>Discover interactive media tracks mixing graphic design layouts, photography captures, and audio
+            engineering pieces.</p>
+          <a href="multimedia.html" class="btn-action">Explore Media</a>
+        </article>
+      </div>
+    </main>
+
+    <!-- NEW: Features Highlight Section -->
+    <section class="features-section reveal">
+      <h2 class="features-header">Why Join FutureMotion?</h2>
+      <div class="features-grid reveal-group">
+        <div class="feature-box">
+          <div class="feature-icon">🎨</div>
+          <h3>Creative Freedom</h3>
+          <p>Unlimited access to industry-standard software and tools for your artistic vision.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">🤝</div>
+          <h3>Community Support</h3>
+          <p>Collaborate with passionate creators and mentors dedicated to your growth.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">📚</div>
+          <h3>Expert Workshops</h3>
+          <p>Learn from industry professionals and experienced animators.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">🏆</div>
+          <h3>Showcase Opportunities</h3>
+          <p>Display your work at exhibitions and events across campus.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">💻</div>
+          <h3>Technology Access</h3>
+          <p>State-of-the-art equipment and rendering capabilities.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon">🚀</div>
+          <h3>Career Ready</h3>
+          <p>Build a professional portfolio to launch your creative career.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" aria-hidden="true">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <h3>🍪 Cookies & Privacy</h3>
+          <p>
+            We use cookies to remember your preferences and improve your
+            FutureMotion experience.
+          </p>
+        </div>
+
+        <div class="cookie-actions">
+          <button id="declineCookies" class="cookie-btn cookie-decline">
+            Decline
+          </button>
+
+          <button id="acceptCookies" class="cookie-btn cookie-accept">
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW: Call-to-Action Section -->
+    <section class="cta-section reveal">
+      <div class="cta-content">
+        <h2>Ready to Unleash Your Creativity?</h2>
+        <p>Join FutureMotion Club today and start your journey into professional digital animation.</p>
+        <div class="cta-buttons reveal-group">
+          <a href="contact.html" class="btn-primary">Join Us Now</a>
+          <a href="about.html" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 <span class="accent">FutureMotion Club</span> — Animation • Multimedia • Creativity</p>
+    </footer>
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top">↑</button>
+
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="js/index-api-social.js" defer></script>
+  <script src="js/nav.js"></script>
+  <script src="js/reveal.js" defer></script>
+  <script src="js/repeat-reveal.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/cookies.js"></script>
+  <script>
+    window.fbAsyncInit = function () { if (window.FB) { FB.init({ xfbml: true, version: "v23.0" }); } };
+  </script>
+</body>
+
+</html>

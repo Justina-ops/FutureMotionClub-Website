@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Events — FutureMotion Club</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/event-bg.css">
+  <link rel="stylesheet" href="css/events.css">
+
+</head>
+
+<body>
+
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+  <div class="future-shooting-star"></div>
+
+  <div class="future-sparkles"></div>
+  <div class="future-sparkles"></div>
+
+  <div class="future-grid"></div>
+  <div class="future-particles"></div>
+
+  <div class="future-hud hud-top-left"></div>
+  <div class="future-hud hud-top-right"></div>
+  <div class="future-hud hud-bottom-left"></div>
+  <div class="future-hud hud-bottom-right"></div>
+
+  <!-- =========================
+       MUSIC
+  ========================== -->
+
+  <button id="musicBtn" class="music-btn" aria-label="Toggle music">
+
+    <svg id="volumeOffIcon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+
+    <svg id="volumeOnIcon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+      <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+      <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+    </svg>
+
+  </button>
+
+  <audio id="bgMusic" loop>
+    <source src="music/01-Amazing-Full-Track-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <header class="mm-header">
+
+    <a class="mm-logo" href="index.html">
+      FUTURE<span>MOTION</span>
+    </a>
+
+    <button class="mm-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <i></i>
+      <i></i>
+      <i></i>
+    </button>
+
+    <nav class="mm-nav" id="mmNav">
+
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="tutorials.html">TUTORIALS</a>
+      <a class="active" href="events.html">EVENTS</a>
+      <a href="multimedia.html">MULTIMEDIA</a>
+      <a href="contact.html">CONTACT</a>
+
+    </nav>
+
+    <button class="mm-theme" id="themeToggle" type="button">
+      ☾ <span>DARK</span>
+    </button>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section class="mm-hero mm-page" id="hero">
+    <div class="hero-stars"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-orbit one"></div>
+    <div class="hero-orbit two"></div>
+
+    <div class="hero-beam b1"></div>
+    <div class="hero-beam b2"></div>
+
+    <div class="hero-copy reveal">
+      <p class="eyebrow">CONNECT. EXPERIENCE. CREATE.
+      </p>
+
+      <h1>
+        EVENTS
+        <em>ZONE</em>
+      </h1>
+
+      <p class="hero-text">
+        Explore upcoming experiences and relive the moments that shaped our community.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#upcomingDivider">
+          UPCOMING EVENTS ↓
+        </a>
+
+        <a class="btn" href="#pastDivider">
+          PAST EVENTS ↗
+        </a>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="hero-side">
+      ANIMATION&nbsp;&nbsp;
+      VIDEO&nbsp;&nbsp;
+      MOTION&nbsp;&nbsp;
+      DESIGN
+    </div>
+
+  </section>
+
+  <!-- =========================
+       EVENTS
+  ========================== -->
+
+  <main>
+
+    <!-- =======================================================
+         NEXT EVENT SECTION 
+    ======================================================== -->
+    <section class="event-countdown-section reveal" id="eventcd">
+
+      <div class="countdown-content">
+
+        <span class="section-kicker">
+          NEXT EVENT
+        </span>
+
+        <h2>
+          Sci-Fi Short Film Screening Night
+        </h2>
+
+        <p>
+          Your next club event starts in:
+        </p>
+
+        <div class="featured-countdown" id="countdown" data-datetime="2026-08-29T19:00:00">
+
+          <div class="countdown-unit">
+            <span id="countdownDays">00</span>
+            <small>Days</small>
+          </div>
+
+          <div class="countdown-divider">:</div>
+
+          <div class="countdown-unit">
+            <span id="countdownHours">00</span>
+            <small>Hours</small>
+          </div>
+
+          <div class="countdown-divider">:</div>
+
+          <div class="countdown-unit">
+            <span id="countdownMinutes">00</span>
+            <small>Minutes</small>
+          </div>
+
+          <div class="countdown-divider">:</div>
+
+          <div class="countdown-unit">
+            <span id="countdownSeconds">00</span>
+            <small>Seconds</small>
+          </div>
+
+        </div>
+
+        <a href="#scifi-screening-card" id="btnNextEventViewMore" class="btn-view-more">
+          View More
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         EVENTS SECTION
+    ======================================================== -->
+    <section class="events-section">
+
+      <!-- =========================================================
+     QUICK LINKS
+     Two primary navigation paths:
+     - Upcoming Events
+     - Past Events
+========================================================= -->
+
+      <section class="quick-links reveal" aria-label="Event quick links">
+
+        <!-- UPCOMING EVENTS -->
+        <a href="#upcomingDivider" class="quick-link-card upcoming-link">
+
+          <div class="quick-link-content">
+
+            <span class="quick-link-number">01</span>
+
+            <span class="quick-link-label">
+              EXPLORE
+            </span>
+
+            <h3>
+              Upcoming
+              <em>Events</em>
+            </h3>
+
+            <p>
+              Discover what's happening next.
+            </p>
+
+          </div>
+
+          <span class="quick-link-arrow" aria-hidden="true">
+            →
+          </span>
+
+        </a>
+
+
+        <!-- PAST EVENTS -->
+        <a href="#pastDivider" class="quick-link-card past-link">
+
+          <div class="quick-link-content">
+
+            <span class="quick-link-number">02</span>
+
+            <span class="quick-link-label">
+              EXPLORE
+            </span>
+
+            <h3>
+              Past
+              <em>Events</em>
+            </h3>
+
+            <p>
+              Explore previous events and community highlights.
+            </p>
+
+          </div>
+
+          <span class="quick-link-arrow" aria-hidden="true">
+            →
+          </span>
+
+        </a>
+
+      </section>
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+
+        <div class="filter-top-row">
+
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="eventSearch" placeholder="Search events..." aria-label="Search events">
+            <button type="button" id="searchClear" class="search-clear" aria-label="Clear search">×</button>
+          </div>
+
+          <div class="sort-box">
+            <label for="eventSort" class="sort-label">Sort</label>
+            <div class="sort-select-wrap">
+              <select id="eventSort" class="sort-select" aria-label="Sort events">
+                <option value="date-asc">Date: Closest First</option>
+                <option value="date-desc">Date: Furthest First</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+              <span class="sort-chevron" aria-hidden="true">⌄</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="workshop">Workshops</button>
+          <button class="filter-btn" data-filter="screening">Screenings</button>
+          <button class="filter-btn" data-filter="competition">Competitions</button>
+          <button class="filter-btn" data-filter="meetup">Meetups</button>
+        </div>
+
+      </div>
+
+      <!-- EVENTS LIST -->
+      <div class="events-list">
+
+        <div class="box" id="upcomingDivider">
+
+          <h2 class="h2">
+            UPCOMING
+            <em>EVENTS</em>
+          </h2>
+
+        </div>
+
+        <!-- UPCOMING EVENTS GRID (first 3 shown, rest revealed by "Load All") -->
+        <div class="upcoming-grid" id="upcomingGrid">
+
+          <!-- EVENT 1: Stop-Motion Workshop -->
+          <article id="stopmotion-workshop-card" class="event-card theme-dark img-right reveal"
+            data-id="stopmotion-workshop" data-price="25" data-category="workshop"
+            data-title="Stop-Motion Animation Workshop" data-start="2026-09-12T10:00:00" data-end="2026-09-12T13:00:00"
+            data-location="FutureMotion Studio, Room 2" data-seats-total="30" data-seats-left="11"
+            data-desc="A hands-on introduction to stop-motion animation. Learn frame rates, lighting, and rigging, then shoot and edit your own 10-second clip.">
+
+            <div class="event-image">
+              <img src="Images/events/brands-people-FJDuN4eQEO8-unsplash.jpg" alt="Stop-motion animation set"
+                loading="lazy">
+              <span class="event-status status-upcoming">Upcoming</span>
+            </div>
+
+            <div class="event-info">
+              <div class="event-meta-row">
+                <span class="badge category-workshop">Workshop</span>
+                <span class="badge fee-charged">RM 25</span>
+              </div>
+
+              <h2 class="event-title">Stop-Motion Animation Workshop</h2>
+              <p class="event-desc">
+                A hands-on introduction to stop-motion animation. Learn frame rates, lighting, and rigging, then shoot
+                and edit your own 10-second clip with figurines and everyday objects.
+              </p>
+
+              <div class="event-details">
+                <div class="detail-item">
+                  <span class="detail-icon">📍</span>
+                  <div>
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">FutureMotion Studio, Room 2</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🗓️</span>
+                  <div>
+                    <span class="detail-label">Date & Time</span>
+                    <span class="detail-value">Sat, Sep 12 · 10:00 AM – 1:00 PM</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🎬</span>
+                  <div>
+                    <span class="detail-label">Organizer</span>
+                    <span class="detail-value">Animation Guild — hosted by Mei Ling</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <div>
+                    <span class="detail-label">Seats</span>
+                    <span class="detail-value">11 of 30 left</span>
+                    <div class="seats-bar">
+                      <div class="seats-fill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="countdown" data-datetime="2026-09-12T10:00:00">
+                <div class="countdown-units">
+                  <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                  <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                  <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                  <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                </div>
+                <p class="countdown-status-line"></p>
+              </div>
+
+              <div class="event-actions">
+                <button class="btn-register" type="button">Register Now</button>
+                <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                <button class="btn-share-event" type="button" aria-label="Share event">
+                  <span>↗</span>
+                  Share
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EVENT 2: Sci-Fi Short Film Screening Night (NEXT EVENT TARGET) -->
+          <article id="scifi-screening-card" class="event-card theme-blue img-left reveal" data-id="scifi-screening"
+            data-price="0" data-category="screening" data-title="Sci-Fi Short Film Screening Night"
+            data-start="2026-08-29T19:00:00" data-end="2026-08-29T22:00:00" data-location="Main Auditorium"
+            data-seats-total="120" data-seats-left="46"
+            data-desc="A curated screening of member-made sci-fi shorts followed by a director Q&A.">
+
+            <div class="event-image">
+              <img src="Images/events/krists-luhaers-AtPWnYNDJnM-unsplash.jpg" alt="Cinema auditorium" loading="lazy">
+              <span class="event-status status-upcoming">Upcoming</span>
+            </div>
+
+            <div class="event-info">
+              <div class="event-meta-row">
+                <span class="badge category-screening">Screening</span>
+                <span class="badge fee-free">Free</span>
+              </div>
+
+              <h2 class="event-title">Sci-Fi Short Film Screening Night</h2>
+              <p class="event-desc">
+                A curated screening of member-made sci-fi shorts on the big screen, followed by a live director Q&A and
+                open floor discussion.
+              </p>
+
+              <div class="event-details">
+                <div class="detail-item">
+                  <span class="detail-icon">📍</span>
+                  <div>
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Main Auditorium</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🗓️</span>
+                  <div>
+                    <span class="detail-label">Date & Time</span>
+                    <span class="detail-value">Sat, Aug 29 · 7:00 PM – 10:00 PM</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🎬</span>
+                  <div>
+                    <span class="detail-label">Organizer</span>
+                    <span class="detail-value">FutureMotion Film Circle</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <div>
+                    <span class="detail-label">Seats</span>
+                    <span class="detail-value">46 of 120 left</span>
+                    <div class="seats-bar">
+                      <div class="seats-fill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="countdown" data-datetime="2026-08-29T19:00:00">
+                <div class="countdown-units">
+                  <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                  <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                  <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                  <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                </div>
+                <p class="countdown-status-line"></p>
+              </div>
+
+              <div class="event-actions">
+                <button class="btn-register" type="button">Register Now</button>
+                <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                <button class="btn-share-event" type="button" aria-label="Share event">
+                  <span>↗</span>
+                  Share
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EVENT 3: FAKE EVENT 1 (Blender Masterclass) -->
+          <article id="blender-masterclass-card" class="event-card theme-dark img-right reveal"
+            data-id="blender-masterclass" data-price="10" data-category="workshop"
+            data-title="Blender 3D Modeling Masterclass" data-start="2026-09-20T14:00:00" data-end="2026-09-20T17:30:00"
+            data-location="Lab 304, IT Block" data-seats-total="25" data-seats-left="5"
+            data-desc="Master hard-surface 3D modeling and Procedural Texturing using Blender 4.x.">
+
+            <div class="event-image">
+              <img src="Images/events/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg" alt="3D modeling workspace"
+                loading="lazy">
+              <span class="event-status status-upcoming">Upcoming</span>
+            </div>
+
+            <div class="event-info">
+              <div class="event-meta-row">
+                <span class="badge category-workshop">Workshop</span>
+                <span class="badge fee-charged">RM 10</span>
+              </div>
+
+              <h2 class="event-title">Blender 3D Modeling Masterclass</h2>
+              <p class="event-desc">
+                Dive into procedural shaders, geometry nodes, and production-ready hard surface asset creation using
+                Blender 4.x.
+              </p>
+
+              <div class="event-details">
+                <div class="detail-item">
+                  <span class="detail-icon">📍</span>
+                  <div>
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Lab 304, IT Block</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🗓️</span>
+                  <div>
+                    <span class="detail-label">Date & Time</span>
+                    <span class="detail-value">Sun, Sep 20 · 2:00 PM – 5:30 PM</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🎬</span>
+                  <div>
+                    <span class="detail-label">Organizer</span>
+                    <span class="detail-value">3D Tech Guild</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <div>
+                    <span class="detail-label">Seats</span>
+                    <span class="detail-value">5 of 25 left</span>
+                    <div class="seats-bar">
+                      <div class="seats-fill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="countdown" data-datetime="2026-09-20T14:00:00">
+                <div class="countdown-units">
+                  <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                  <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                  <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                  <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                </div>
+                <p class="countdown-status-line"></p>
+              </div>
+
+              <div class="event-actions">
+                <button class="btn-register" type="button">Register Now</button>
+                <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                <button class="btn-share-event" type="button" aria-label="Share event">
+                  <span>↗</span>
+                  Share
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EVENT 4: 48-Hour Animation Sprint -->
+          <article id="animation-sprint-card" class="event-card theme-dark img-left reveal upcoming-extra"
+            data-id="animation-sprint" data-price="15" data-category="competition" data-soldout="true"
+            data-title="48-Hour Animation Sprint" data-start="2026-09-05T09:00:00" data-end="2026-09-07T09:00:00"
+            data-location="FutureMotion Studio, Main Hall" data-seats-total="40" data-seats-left="0"
+            data-desc="Teams of up to four build a short animated piece from a surprise prompt in 48 hours.">
+
+            <div class="event-image">
+              <img src="Images/events/compagnons-AQTA5E6mCNU-unsplash.jpg" alt="Team working on animation project"
+                loading="lazy">
+              <span class="event-status status-soldout">Sold Out</span>
+            </div>
+
+            <div class="event-info">
+              <div class="event-meta-row">
+                <span class="badge category-competition">Competition</span>
+                <span class="badge fee-charged">RM 15 / team</span>
+              </div>
+
+              <h2 class="event-title">48-Hour Animation Sprint</h2>
+              <p class="event-desc">
+                Teams of up to 4 receive a surprise prompt and have 48 hours to write, animate, and score a short piece
+                from scratch.
+              </p>
+
+              <div class="event-details">
+                <div class="detail-item">
+                  <span class="detail-icon">📍</span>
+                  <div>
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">FutureMotion Studio, Main Hall</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🗓️</span>
+                  <div>
+                    <span class="detail-label">Date & Time</span>
+                    <span class="detail-value">Sat–Mon, Sep 5–7 · 9:00 AM start</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🎬</span>
+                  <div>
+                    <span class="detail-label">Organizer</span>
+                    <span class="detail-value">Competitions Committee</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <div>
+                    <span class="detail-label">Teams</span>
+                    <span class="detail-value">0 of 40 slots left</span>
+                    <div class="seats-bar">
+                      <div class="seats-fill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="countdown" data-datetime="2026-09-05T09:00:00">
+                <div class="countdown-units">
+                  <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                  <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                  <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                  <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                </div>
+                <p class="countdown-status-line"></p>
+              </div>
+
+              <div class="event-actions">
+                <button class="btn-register" type="button" disabled>Sold Out</button>
+                <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                <button class="btn-share-event" type="button" aria-label="Share event">
+                  <span>↗</span>
+                  Share
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EVENT 5: FAKE EVENT 2 (VR Storytelling Meetup) -->
+          <article id="vr-storytelling-card" class="event-card theme-blue img-right reveal upcoming-extra"
+            data-id="vr-storytelling" data-price="0" data-category="meetup" data-title="VR Storytelling & Worldbuilding"
+            data-start="2026-10-02T18:30:00" data-end="2026-10-02T21:00:00" data-location="VR Lab / Room 102"
+            data-seats-total="35" data-seats-left="18"
+            data-desc="Explore spatial narrative techniques and interactive cinematic environments in VR.">
+
+            <div class="event-image">
+              <img src="Images/events/lucrezia-carnelos-IMUwe-p1yqs-unsplash.jpg"
+                alt="VR headset and interactive environment" loading="lazy">
+              <span class="event-status status-upcoming">Upcoming</span>
+            </div>
+
+            <div class="event-info">
+              <div class="event-meta-row">
+                <span class="badge category-meetup">Meetup</span>
+                <span class="badge fee-free">Free</span>
+              </div>
+
+              <h2 class="event-title">VR Storytelling & Worldbuilding</h2>
+              <p class="event-desc">
+                An interactive meetup exploring real-time spatial rendering, environment storytelling, and interactive
+                mechanics in virtual reality.
+              </p>
+
+              <div class="event-details">
+                <div class="detail-item">
+                  <span class="detail-icon">📍</span>
+                  <div>
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">VR Lab / Room 102</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🗓️</span>
+                  <div>
+                    <span class="detail-label">Date & Time</span>
+                    <span class="detail-value">Fri, Oct 2 · 6:30 PM – 9:00 PM</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">🎬</span>
+                  <div>
+                    <span class="detail-label">Organizer</span>
+                    <span class="detail-value">Immersive Media Group</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <span class="detail-icon">👥</span>
+                  <div>
+                    <span class="detail-label">Seats</span>
+                    <span class="detail-value">18 of 35 left</span>
+                    <div class="seats-bar">
+                      <div class="seats-fill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="countdown" data-datetime="2026-10-02T18:30:00">
+                <div class="countdown-units">
+                  <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                  <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                  <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                  <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                </div>
+                <p class="countdown-status-line"></p>
+              </div>
+
+              <div class="event-actions">
+                <button class="btn-register" type="button">Register Now</button>
+                <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                <button class="btn-share-event" type="button" aria-label="Share event">
+                  <span>↗</span>
+                  Share
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.upcoming-grid -->
+
+        <div class="load-more-wrap" id="upcomingLoadWrap">
+          <button type="button" id="loadAllUpcomingBtn" class="btn-load-all">Load All Events</button>
+          <button type="button" id="showLessUpcomingBtn" class="btn-show-less" hidden>Show Less</button>
+        </div>
+
+        <div class="box" id="pastDivider">
+
+          <h2 class="h2">
+            PAST
+            <em>EVENTS</em>
+          </h2>
+
+        </div>
+
+        <!-- PAST EVENTS — VERTICAL TIMELINE, ALTERNATING LEFT/RIGHT -->
+        <div class="past-timeline" id="pastTimeline">
+
+          <!-- ROW 1: VFX Meetup (left) -->
+          <div class="timeline-row">
+            <div class="timeline-item timeline-left">
+              <article id="vfx-meetup-card" class="event-card theme-blue img-left reveal timeline-card"
+                data-id="vfx-meetup" data-price="0" data-category="meetup" data-title="Behind the Render: VFX Meetup"
+                data-start="2026-07-30T18:00:00" data-end="2026-07-30T20:30:00"
+                data-location="FutureMotion Studio, Lounge" data-seats-total="50" data-seats-left="0"
+                data-desc="A casual meetup where members broke down their render pipelines and traded VFX tips.">
+
+                <div class="event-image">
+                  <img src="Images/events/raka-rahmadani-MHhYgNGLD0c-unsplash.jpg"
+                    alt="Group discussion around a monitor showing 3D render" loading="lazy">
+                  <span class="event-status status-past">Past Event</span>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-meta-row">
+                    <span class="badge category-meetup">Meetup</span>
+                    <span class="badge fee-free">Free</span>
+                  </div>
+
+                  <span class="timeline-date">Thu, Jul 30, 2026</span>
+
+                  <h2 class="event-title">Behind the Render: VFX Meetup</h2>
+                  <p class="event-desc">
+                    A casual, member-led meetup where studio artists broke down their render pipelines, shared node
+                    setups, and answered questions over pizza.
+                  </p>
+
+                  <div class="event-details">
+                    <div class="detail-item">
+                      <span class="detail-icon">📍</span>
+                      <div>
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value">FutureMotion Studio, Lounge</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🗓️</span>
+                      <div>
+                        <span class="detail-label">Date & Time</span>
+                        <span class="detail-value">Thu, Jul 30 · 6:00 PM – 8:30 PM</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🎬</span>
+                      <div>
+                        <span class="detail-label">Organizer</span>
+                        <span class="detail-value">VFX Interest Group</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">👥</span>
+                      <div>
+                        <span class="detail-label">Attendance</span>
+                        <span class="detail-value">50 of 50 attended</span>
+                        <div class="seats-bar">
+                          <div class="seats-fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="countdown" data-datetime="2026-07-30T18:00:00">
+                    <div class="countdown-units">
+                      <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                      <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                      <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                      <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                    </div>
+                    <p class="countdown-status-line"></p>
+                  </div>
+
+                  <div class="event-actions">
+                    <button class="btn-register" type="button" disabled>Registration Closed</button>
+                    <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                    <button class="btn-share-event" type="button" aria-label="Share event">
+                      <span>↗</span>
+                      Share
+                    </button>
+                  </div>
+
+                  <button type="button" class="btn-expand-toggle" aria-expanded="false">
+                    <span class="expand-label">View Full Details</span>
+                    <span class="expand-icon">⌄</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-item timeline-right timeline-empty" aria-hidden="true"></div>
+          </div>
+
+          <!-- ROW 2: Character Design Bootcamp (right) -->
+          <div class="timeline-row">
+            <div class="timeline-item timeline-left timeline-empty" aria-hidden="true"></div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-item timeline-right">
+              <article id="character-bootcamp-card" class="event-card theme-dark img-right reveal timeline-card"
+                data-id="character-bootcamp" data-price="20" data-category="workshop"
+                data-title="Character Design Bootcamp" data-start="2026-07-18T10:00:00" data-end="2026-07-18T16:00:00"
+                data-location="FutureMotion Studio, Room 2" data-seats-total="28" data-seats-left="0"
+                data-desc="A full-day intensive on character silhouettes, expression sheets, and turnaround drawings.">
+
+                <div class="event-image">
+                  <img src="Images/events/pexels-i-clal-capoglu-cinal-202384677-30693631.jpg"
+                    alt="Character concept sketches on a desk" loading="lazy">
+                  <span class="event-status status-past">Past Event</span>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-meta-row">
+                    <span class="badge category-workshop">Workshop</span>
+                    <span class="badge fee-charged">RM 20</span>
+                  </div>
+
+                  <span class="timeline-date">Sat, Jul 18, 2026</span>
+
+                  <h2 class="event-title">Character Design Bootcamp</h2>
+                  <p class="event-desc">
+                    A full-day intensive covering silhouette design, expression sheets, and turnaround drawings, capped
+                    with a group critique session.
+                  </p>
+
+                  <div class="event-details">
+                    <div class="detail-item">
+                      <span class="detail-icon">📍</span>
+                      <div>
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value">FutureMotion Studio, Room 2</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🗓️</span>
+                      <div>
+                        <span class="detail-label">Date & Time</span>
+                        <span class="detail-value">Sat, Jul 18 · 10:00 AM – 4:00 PM</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🎬</span>
+                      <div>
+                        <span class="detail-label">Organizer</span>
+                        <span class="detail-value">Character Design Guild</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">👥</span>
+                      <div>
+                        <span class="detail-label">Attendance</span>
+                        <span class="detail-value">28 of 28 attended</span>
+                        <div class="seats-bar">
+                          <div class="seats-fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="countdown" data-datetime="2026-07-18T10:00:00">
+                    <div class="countdown-units">
+                      <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                      <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                      <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                      <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                    </div>
+                    <p class="countdown-status-line"></p>
+                  </div>
+
+                  <div class="event-actions">
+                    <button class="btn-register" type="button" disabled>Registration Closed</button>
+                    <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                    <button class="btn-share-event" type="button" aria-label="Share event">
+                      <span>↗</span>
+                      Share
+                    </button>
+                  </div>
+
+                  <button type="button" class="btn-expand-toggle" aria-expanded="false">
+                    <span class="expand-label">View Full Details</span>
+                    <span class="expand-icon">⌄</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ROW 3: Retro Game Jam Screening (left) -->
+          <div class="timeline-row">
+            <div class="timeline-item timeline-left">
+              <article id="retro-jam-screening-card" class="event-card theme-blue img-left reveal timeline-card"
+                data-id="retro-jam-screening" data-price="0" data-category="screening"
+                data-title="Retro Game Jam Screening" data-start="2026-07-05T19:00:00" data-end="2026-07-05T21:30:00"
+                data-location="Main Auditorium" data-seats-total="90" data-seats-left="0"
+                data-desc="Playthroughs and behind-the-scenes reels from the club's retro-styled game jam entries.">
+
+                <div class="event-image">
+                  <img src="Images/events/stem-list-ryRU-cd1yas-unsplash.jpg"
+                    alt="Auditorium screen showing gameplay footage" loading="lazy">
+                  <span class="event-status status-past">Past Event</span>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-meta-row">
+                    <span class="badge category-screening">Screening</span>
+                    <span class="badge fee-free">Free</span>
+                  </div>
+
+                  <span class="timeline-date">Sun, Jul 5, 2026</span>
+
+                  <h2 class="event-title">Retro Game Jam Screening</h2>
+                  <p class="event-desc">
+                    Playthroughs and behind-the-scenes reels from the club's retro-styled game jam entries, followed by
+                    a developer panel.
+                  </p>
+
+                  <div class="event-details">
+                    <div class="detail-item">
+                      <span class="detail-icon">📍</span>
+                      <div>
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value">Main Auditorium</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🗓️</span>
+                      <div>
+                        <span class="detail-label">Date & Time</span>
+                        <span class="detail-value">Sun, Jul 5 · 7:00 PM – 9:30 PM</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🎬</span>
+                      <div>
+                        <span class="detail-label">Organizer</span>
+                        <span class="detail-value">FutureMotion Game Dev Circle</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">👥</span>
+                      <div>
+                        <span class="detail-label">Attendance</span>
+                        <span class="detail-value">90 of 90 attended</span>
+                        <div class="seats-bar">
+                          <div class="seats-fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="countdown" data-datetime="2026-07-05T19:00:00">
+                    <div class="countdown-units">
+                      <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                      <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                      <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                      <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                    </div>
+                    <p class="countdown-status-line"></p>
+                  </div>
+
+                  <div class="event-actions">
+                    <button class="btn-register" type="button" disabled>Registration Closed</button>
+                    <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                    <button class="btn-share-event" type="button" aria-label="Share event">
+                      <span>↗</span>
+                      Share
+                    </button>
+                  </div>
+
+                  <button type="button" class="btn-expand-toggle" aria-expanded="false">
+                    <span class="expand-label">View Full Details</span>
+                    <span class="expand-icon">⌄</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-item timeline-right timeline-empty" aria-hidden="true"></div>
+          </div>
+
+          <!-- ROW 4: Puppet Rigging Competition (right) -->
+          <div class="timeline-row">
+            <div class="timeline-item timeline-left timeline-empty" aria-hidden="true"></div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-item timeline-right">
+              <article id="puppet-rigging-card" class="event-card theme-dark img-right reveal timeline-card"
+                data-id="puppet-rigging" data-price="15" data-category="competition"
+                data-title="Puppet Rigging Competition" data-start="2026-06-20T09:00:00" data-end="2026-06-20T18:00:00"
+                data-location="FutureMotion Studio, Main Hall" data-seats-total="20" data-seats-left="0"
+                data-desc="Teams rigged a stop-motion puppet armature against the clock and judged for range of motion and durability.">
+
+                <div class="event-image">
+                  <img src="Images/events/laark-boshoff-lD_VRnAjiWo-unsplash.jpg"
+                    alt="Team assembling a puppet armature" loading="lazy">
+                  <span class="event-status status-past">Past Event</span>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-meta-row">
+                    <span class="badge category-competition">Competition</span>
+                    <span class="badge fee-charged">RM 15 / team</span>
+                  </div>
+
+                  <span class="timeline-date">Sat, Jun 20, 2026</span>
+
+                  <h2 class="event-title">Puppet Rigging Competition</h2>
+                  <p class="event-desc">
+                    Teams built and rigged a stop-motion puppet armature against the clock, judged on range of motion,
+                    durability, and finish.
+                  </p>
+
+                  <div class="event-details">
+                    <div class="detail-item">
+                      <span class="detail-icon">📍</span>
+                      <div>
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value">FutureMotion Studio, Main Hall</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🗓️</span>
+                      <div>
+                        <span class="detail-label">Date & Time</span>
+                        <span class="detail-value">Sat, Jun 20 · 9:00 AM – 6:00 PM</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🎬</span>
+                      <div>
+                        <span class="detail-label">Organizer</span>
+                        <span class="detail-value">Competitions Committee</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">👥</span>
+                      <div>
+                        <span class="detail-label">Teams</span>
+                        <span class="detail-value">20 of 20 teams attended</span>
+                        <div class="seats-bar">
+                          <div class="seats-fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="countdown" data-datetime="2026-06-20T09:00:00">
+                    <div class="countdown-units">
+                      <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                      <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                      <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                      <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                    </div>
+                    <p class="countdown-status-line"></p>
+                  </div>
+
+                  <div class="event-actions">
+                    <button class="btn-register" type="button" disabled>Registration Closed</button>
+                    <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                    <button class="btn-share-event" type="button" aria-label="Share event">
+                      <span>↗</span>
+                      Share
+                    </button>
+                  </div>
+
+                  <button type="button" class="btn-expand-toggle" aria-expanded="false">
+                    <span class="expand-label">View Full Details</span>
+                    <span class="expand-icon">⌄</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ROW 5: Sound Design for Animation Meetup (left) -->
+          <div class="timeline-row">
+            <div class="timeline-item timeline-left">
+              <article id="sound-design-meetup-card" class="event-card theme-blue img-left reveal timeline-card"
+                data-id="sound-design-meetup" data-price="0" data-category="meetup"
+                data-title="Sound Design for Animation Meetup" data-start="2026-06-03T18:30:00"
+                data-end="2026-06-03T20:30:00" data-location="FutureMotion Studio, Lounge" data-seats-total="40"
+                data-seats-left="0"
+                data-desc="Members shared foley and layered sound-design techniques for short animated pieces.">
+
+                <div class="event-image">
+                  <img src="Images/events/redd-francisco-PTRzqc_h1r4-unsplash.jpg"
+                    alt="Audio mixing setup with headphones" loading="lazy">
+                  <span class="event-status status-past">Past Event</span>
+                </div>
+
+                <div class="event-info">
+                  <div class="event-meta-row">
+                    <span class="badge category-meetup">Meetup</span>
+                    <span class="badge fee-free">Free</span>
+                  </div>
+
+                  <span class="timeline-date">Wed, Jun 3, 2026</span>
+
+                  <h2 class="event-title">Sound Design for Animation Meetup</h2>
+                  <p class="event-desc">
+                    Members shared foley techniques and layered sound-design approaches for short animated pieces, with
+                    live demos on a few club projects.
+                  </p>
+
+                  <div class="event-details">
+                    <div class="detail-item">
+                      <span class="detail-icon">📍</span>
+                      <div>
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value">FutureMotion Studio, Lounge</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🗓️</span>
+                      <div>
+                        <span class="detail-label">Date & Time</span>
+                        <span class="detail-value">Wed, Jun 3 · 6:30 PM – 8:30 PM</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">🎬</span>
+                      <div>
+                        <span class="detail-label">Organizer</span>
+                        <span class="detail-value">Audio & Post Interest Group</span>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <span class="detail-icon">👥</span>
+                      <div>
+                        <span class="detail-label">Attendance</span>
+                        <span class="detail-value">40 of 40 attended</span>
+                        <div class="seats-bar">
+                          <div class="seats-fill"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="countdown" data-datetime="2026-06-03T18:30:00">
+                    <div class="countdown-units">
+                      <div class="countdown-unit"><span class="num cd-days">00</span><span class="lbl">Days</span></div>
+                      <div class="countdown-unit"><span class="num cd-hours">00</span><span class="lbl">Hrs</span></div>
+                      <div class="countdown-unit"><span class="num cd-mins">00</span><span class="lbl">Min</span></div>
+                      <div class="countdown-unit"><span class="num cd-secs">00</span><span class="lbl">Sec</span></div>
+                    </div>
+                    <p class="countdown-status-line"></p>
+                  </div>
+
+                  <div class="event-actions">
+                    <button class="btn-register" type="button" disabled>Registration Closed</button>
+                    <button class="btn-calendar" type="button">+ Add to Calendar</button>
+                    <button class="btn-share-event" type="button" aria-label="Share event">
+                      <span>↗</span>
+                      Share
+                    </button>
+                  </div>
+
+                  <button type="button" class="btn-expand-toggle" aria-expanded="false">
+                    <span class="expand-label">View Full Details</span>
+                    <span class="expand-icon">⌄</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-item timeline-right timeline-empty" aria-hidden="true"></div>
+          </div>
+
+        </div><!-- /.past-timeline -->
+
+        <p id="noEventResults" class="no-event-results">
+          No events found. Try another search or category.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       EVENT HELP / SUPPORT
+  ========================== -->
+
+  <section class="event-help-section" aria-labelledby="eventHelpTitle">
+    <div class="event-help-content">
+
+      <span class="event-help-kicker">Need a hand?</span>
+
+      <h2 id="eventHelpTitle">
+        Need help with an <em>event or registration?</em>
+      </h2>
+
+      <p>
+        We're happy to help. If you have questions about an event,
+        registration, tickets, or anything else, get in touch with us.
+      </p>
+
+      <a class="event-help-btn" href="contact.html">
+        Contact Us <span aria-hidden="true">→</span>
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <p>
+      © 2026
+      <span class="accent">
+        FutureMotion Club
+      </span>
+      — Animation • Multimedia • Creativity
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       REGISTRATION MODAL
+  ========================== -->
+
+  <div class="modal-overlay" id="eventModalOverlay" aria-hidden="true">
+
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle">
+
+      <button class="modal-close" id="eventModalClose" type="button" aria-label="Close">
+        ✕
+      </button>
+
+      <div class="modal-body">
+
+        <h2 id="eventModalTitle">
+          Register
+        </h2>
+
+        <p class="modal-event-meta" id="eventModalMeta">
+        </p>
+
+        <p class="form-draft-note" id="eventDraftNote" hidden>
+          We restored what you'd already typed in this session.
+        </p>
+
+        <p class="form-error" id="eventFormError">
+        </p>
+
+
+        <form id="eventRegForm">
+
+          <input type="hidden" id="regEventId">
+
+
+          <div class="form-group">
+
+            <label for="regName">
+              Full Name
+            </label>
+
+            <input type="text" id="regName" required autocomplete="name">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="regEmail">
+              Email
+            </label>
+
+            <input type="email" id="regEmail" required autocomplete="email">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="regPhone">
+              Phone (optional)
+            </label>
+
+            <input type="tel" id="regPhone" autocomplete="tel">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="regTickets">
+              Number of Tickets
+            </label>
+
+            <select id="regTickets">
+
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="regNotes">
+              Notes (optional)
+            </label>
+
+            <textarea id="regNotes" rows="3" placeholder="Dietary needs, accessibility, questions...">
+            </textarea>
+
+          </div>
+
+
+          <div class="form-group terms-checkbox">
+
+            <label>
+
+              <input type="checkbox" id="regAgree" required>
+
+              <span>
+                I agree to the
+                <button type="button" id="termsOpen" class="terms-link">
+                  Terms & Conditions
+                </button>
+                and photography consent.
+              </span>
+
+            </label>
+
+          </div>
+
+
+          <div class="form-actions">
+
+            <button type="submit" class="btn-register">
+              Confirm Registration
+            </button>
+
+            <button type="button" class="btn-calendar" id="eventModalCancel">
+              Cancel
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       TERMS & CONDITIONS POPUP
+  ========================== -->
+
+  <div class="terms-overlay" id="termsOverlay" aria-hidden="true">
+
+    <div class="terms-modal" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+
+      <button class="modal-close" id="termsClose" type="button" aria-label="Close">
+        ✕
+      </button>
+
+
+      <div class="terms-body">
+
+        <span class="terms-eyebrow">
+          FutureMotion Club
+        </span>
+
+        <h2 id="termsTitle">
+          Terms & Conditions
+        </h2>
+
+        <div class="terms-content">
+
+          <h3>1. Event Registration</h3>
+
+          <p>
+            Registration is required for events with limited
+            capacity. Your place is confirmed only after the
+            registration form has been successfully submitted.
+          </p>
+
+
+          <h3>2. Attendance</h3>
+
+          <p>
+            Please arrive on time. The club may release
+            reserved places if attendees arrive significantly
+            late.
+          </p>
+
+
+          <h3>3. Photography & Video Consent</h3>
+
+          <p>
+            By attending FutureMotion Club events, you may
+            appear in photographs or videos taken during the
+            event. These materials may be used for club
+            documentation, social media, promotional materials,
+            and future event publicity.
+          </p>
+
+
+          <h3>4. Event Changes</h3>
+
+          <p>
+            FutureMotion Club reserves the right to change
+            event times, locations, or activities when necessary.
+            Registered participants will be informed of major
+            changes where possible.
+          </p>
+
+
+          <h3>5. Personal Information</h3>
+
+          <p>
+            Information entered during registration is used
+            only for event administration and communication.
+          </p>
+
+
+          <h3>6. Agreement</h3>
+
+          <p>
+            By registering, you confirm that you have read and
+            understood these terms and agree to follow the
+            event guidelines.
+          </p>
+
+        </div>
+
+
+        <button type="button" class="terms-done" id="termsDone">
+          I Understand
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =========================================================
+       EVENT SOCIAL SHARE MODAL
+  ========================================================= -->
+  <div class="event-share-overlay" id="eventShareOverlay" aria-hidden="true">
+
+    <div class="event-share-modal" role="dialog" aria-modal="true" aria-labelledby="eventShareTitle">
+
+      <button type="button" class="event-share-close" id="eventShareClose" aria-label="Close share dialog">
+        ✕
+      </button>
+
+      <span class="event-share-kicker">
+        SHARE EVENT
+      </span>
+
+      <h2 id="eventShareTitle">
+        Share this <em>Event</em>
+      </h2>
+
+      <p id="eventShareDescription">
+        Share this event with your friends and classmates.
+      </p>
+
+      <div class="event-share-buttons" id="eventShareButtons">
+
+        <a class="share-btn" id="shareFacebook" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="Share on Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 8h3V5h-3c-2.8 0-5 2.2-5 5v2H6v3h3v6h3v-6h3l1-3h-4v-2c0-1.1.9-2 2-2z" />
+          </svg>
+        </a>
+
+        <a class="share-btn" id="shareTwitter" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="Share on X" title="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.37l7.24-8.28L2.8 2h6.4l4.42 5.84L18.9 2zm-1.1 17.9h1.73L8.27 4H6.42L17.8 19.9z" />
+          </svg>
+        </a>
+
+        <a class="share-btn" id="shareWhatsApp" href="#" target="_blank" rel="noopener noreferrer"
+          aria-label="Share on WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.13 1.59 5.93L.1 24l6.33-1.66a11.86 11.86 0 0 0 5.62 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.17-3.44-8.39zM12.06 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.75.98 1-3.66-.23-.38a9.86 9.86 0 1 1 8.39 4.65zm5.41-7.4c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.12 3.24 5.14 4.55.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
+          </svg>
+        </a>
+
+        <button class="share-btn" id="shareCopy" type="button" aria-label="Copy event link" title="Copy link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg>
+        </button>
+
+      </div>
+
+      <span class="share-copy-status" id="shareCopyStatus">
+        Link copied!
+      </span>
+
+    </div>
+  </div>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <div id="cookieBanner" class="cookie-banner" aria-hidden="true">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <h3>🍪 Cookies & Privacy</h3>
+        <p>
+          We use cookies to remember your preferences and improve your
+          FutureMotion experience.
+        </p>
+      </div>
+
+      <div class="cookie-actions">
+        <button id="declineCookies" class="cookie-btn cookie-decline">
+          Decline
+        </button>
+
+        <button id="acceptCookies" class="cookie-btn cookie-accept">
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script src="js/reveal.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/cookies.js"></script>
+
+</body>
+
+</html>

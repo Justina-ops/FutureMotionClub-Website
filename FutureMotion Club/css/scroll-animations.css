@@ -1,0 +1,58 @@
+/* =========================================================
+   SHARED SCROLL REVEAL SYSTEM
+   Used by Home + About.
+   ========================================================= */
+.reveal,
+.repeat-reveal {
+  opacity: 0;
+  transform: translate3d(0, 38px, 0) scale(.985);
+  filter: blur(2px);
+  transition:
+    opacity .72s ease,
+    transform .72s cubic-bezier(.22, 1, .36, 1),
+    filter .72s ease;
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible,
+.repeat-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-group > * {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0) scale(.99);
+  filter: blur(1.5px);
+  transition:
+    opacity .65s ease,
+    transform .65s cubic-bezier(.22, 1, .36, 1),
+    filter .65s ease;
+  will-change: opacity, transform, filter;
+}
+
+.reveal-group.is-visible > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-group > *:nth-child(1) { transition-delay: .04s; }
+.reveal-group > *:nth-child(2) { transition-delay: .12s; }
+.reveal-group > *:nth-child(3) { transition-delay: .20s; }
+.reveal-group > *:nth-child(4) { transition-delay: .28s; }
+.reveal-group > *:nth-child(5) { transition-delay: .36s; }
+.reveal-group > *:nth-child(6) { transition-delay: .44s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal,
+  .repeat-reveal,
+  .reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}

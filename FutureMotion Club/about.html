@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureMotion Club — About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- CSS LOAD ORDER: Base -> Components -> Page -> Animations (Last to override collisions) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/scroll-animations.css">
+
+  <script src="js/theme.js"></script>
+</head>
+
+<body class="about-page">
+
+  <!-- Background Accents -->
+  <div class="bg-accent-1"></div>
+  <div class="bg-accent-2"></div>
+
+  <header class="mm-header">
+    <a class="mm-logo" href="index.html">FUTURE<span>MOTION</span></a>
+    <button class="mm-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+    <nav class="mm-nav" id="mmNav">
+      <a href="index.html">HOME</a>
+      <a class="active" href="about.html">ABOUT</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="tutorials.html">TUTORIALS</a>
+      <a href="events.html">EVENTS</a>
+      <a href="multimedia.html">MULTIMEDIA</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <button class="mm-theme" id="themeToggle" type="button">☾ <span>DARK</span></button>
+  </header>
+
+  <div class="page-content-wrapper" id="top">
+    <section class="mm-hero mm-page reveal" id="overview">
+      <div class="hero-stars"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orbit one"></div>
+      <div class="hero-orbit two"></div>
+      <div class="hero-beam b1"></div>
+      <div class="hero-beam b2"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">ABOUT FUTUREMOTION</p>
+        <h1>OUR<br><em>BACKGROUND</em></h1>
+        <p class="hero-text">Empowering creative digital artists to translate imagination into responsive motion.</p>
+      </div>
+    </section>
+
+    <main class="about-layout">
+      <section class="split-row reveal" id="mission">
+        <div class="split-col">
+          <h2>Mission and Purpose</h2>
+          <p>Established in 2026, FutureMotion Club serves as a unified digital platform built to support student
+            creators. We bridge the gap between creative visual artistry and front-end multimedia technologies. Our
+            community provides structured roads for exploring visual compositions, interactive UI frames, and digital
+            rendering pipelines.</p>
+          <p>Our goal is to make creative technology approachable: members can experiment, receive peer feedback,
+            document their process, and gradually turn classroom concepts into portfolio-ready work.</p>
+        </div>
+        <div class="split-col">
+          <div
+            style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 2.25rem;">
+            <h3
+              style="color: var(--primary-blue); margin-top: 0; font-family: 'Poppins', sans-serif; font-size: 1.4rem; margin-bottom: 1.25rem;">
+              What We Provide</h3>
+            <ul
+              style="color: var(--text-muted); font-family: 'Inter', sans-serif; font-size: 0.95rem; line-height: 1.8; padding-left: 1.25rem; margin: 0;">
+              <li>Hands-on workspaces equipped with modern processing rigs.</li>
+              <li>Shared graphic drawing tablets and touchscreen peripherals.</li>
+              <li>Peer-to-peer technical reviews and animation hackathons.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-highlights reveal" aria-labelledby="focus-title">
+        <div class="about-highlights-header">
+          <h2 id="focus-title">How We Turn Ideas Into Work</h2>
+          <p>FutureMotion connects creative planning, production practice, and public presentation in one student-led
+            workflow.</p>
+        </div>
+        <div class="about-highlights-grid reveal-group">
+          <article class="about-highlight-card">
+            <span class="about-highlight-number">01</span>
+            <h3>Explore</h3>
+            <p>Members test animation, interface, illustration, photography, and multimedia concepts before deciding
+              which direction best fits an idea.</p>
+          </article>
+          <article class="about-highlight-card">
+            <span class="about-highlight-number">02</span>
+            <h3>Build</h3>
+            <p>Projects move through practical production stages with peer reviews, technical guidance, reusable assets,
+              and workshop-based learning.</p>
+          </article>
+          <article class="about-highlight-card">
+            <span class="about-highlight-number">03</span>
+            <h3>Share</h3>
+            <p>Finished work can become part of a showreel, exhibition, event presentation, or portfolio that
+              demonstrates both creativity and technical skill.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="chart-container reveal" id="committee">
+        <h2 class="chart-header">Leadership Committee</h2>
+        <p class="chart-subtitle">The administrative team steering our creative operations for the current academic
+          calendar.</p>
+
+        <!-- Removed nested .reveal from child items to stop glitching -->
+        <div class="committee-matrix reveal-group">
+          <article class="profile-card">
+            <div class="profile-avatar-placeholder"><img src="Images/about/ljm.jpeg"
+                alt="Committee profile image for Liew Jia Min"></div>
+            <h3>Liew Jia Min</h3>
+            <span class="role-badge">Club President</span>
+            <p>Oversees strategic growth directives, manages university portal integrations, and establishes multi-track
+              workshop operations.</p>
+          </article>
+          <article class="profile-card">
+            <div class="profile-avatar-placeholder"><img src="Images/about/ldh.jpeg"
+                alt="Committee profile image for Leong Di Hao"></div>
+            <h3>Leong Di Hao</h3>
+            <span class="role-badge">Treasurer</span>
+            <p>Manages software licensing allocations, equipment financing, and financial resource modeling for hardware
+              peripherals.</p>
+          </article>
+          <article class="profile-card">
+            <div class="profile-avatar-placeholder"><img src="Images/about/ykq.jpeg"
+                alt="Committee profile image for Yew Kai Qian"></div>
+            <h3>Yew Kai Qian</h3>
+            <span class="role-badge">Marketing Officer</span>
+            <p>Coordinates digital showreel distributions, brand positioning templates, and active external social feed
+              configurations.</p>
+          </article>
+          <article class="profile-card">
+            <div class="profile-avatar-placeholder"><img src="Images/about/ssw.jpeg"
+                alt="Committee profile image for Sek Siang Wee"></div>
+            <h3>Sek Siang Wee</h3>
+            <span class="role-badge">Welfare Officer</span>
+            <p>Maintains safe community guidelines, balances training tracks, and supports collaborative student project
+              review sessions.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="values-section reveal" id="values">
+      <h2 class="values-header">Our Core Values</h2>
+      <!-- Removed nested .reveal on cards -->
+      <div class="values-grid reveal-group">
+        <div class="value-card">
+          <h3>Innovation</h3>
+          <p>We push boundaries in digital animation and creative technology, exploring new techniques and tools to
+            bring visionary ideas to life.</p>
+        </div>
+        <div class="value-card">
+          <h3>Collaboration</h3>
+          <p>Teamwork makes the dream work. We believe in fostering a supportive community where creators lift each
+            other up.</p>
+        </div>
+        <div class="value-card">
+          <h3>Excellence</h3>
+          <p>We are committed to producing high-quality work that meets professional standards and inspires audiences.
+          </p>
+        </div>
+        <div class="value-card">
+          <h3>Accessibility</h3>
+          <p>Everyone deserves a chance to create. We provide resources and mentorship to all skill levels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section reveal" id="creative-journey" aria-labelledby="journey-title">
+      <h2 class="timeline-header" id="journey-title">From Idea to Showcase</h2>
+      <div class="timeline-container reveal-group">
+        <article class="timeline-item">
+          <div class="timeline-marker">01 · EXPLORE</div>
+          <div class="timeline-content">
+            <h3>Discover Creative Directions</h3>
+            <p>Start with inspiration from the Gallery and Multimedia pages, then test ideas across animation, visual
+              design, photography, and motion graphics.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">02 · BUILD</div>
+          <div class="timeline-content">
+            <h3>Develop the Production</h3>
+            <p>Move an idea into Projects and Tutorials, where students can practise production techniques, refine
+              assets, and turn concepts into portfolio-ready work.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">03 · CONNECT</div>
+          <div class="timeline-content">
+            <h3>Learn Through Community</h3>
+            <p>Use Events and Contact to find workshops, creative activities, peer discussions, and opportunities to
+              collaborate with other FutureMotion members.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker">04 · SHOWCASE</div>
+          <div class="timeline-content">
+            <h3>Present the Final Work</h3>
+            <p>Bring the finished piece together as a showreel, exhibition item, event presentation, or professional
+              portfolio entry that demonstrates both creativity and technical skill.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-social-section reveal" aria-labelledby="about-social-title">
+      <div class="about-social-panel">
+        <div>
+          <span class="about-social-kicker">STAY CONNECTED</span>
+          <h2 id="about-social-title">Share the FutureMotion Community</h2>
+          <p>Share our creative community with classmates and friends, and help more student creators discover
+            FutureMotion.</p>
+        </div>
+        <div class="social-buttons">
+          <div class="fb-share-button" data-layout="button" data-size="small"></div>
+          <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=Discover%20FutureMotion%20Club&url=">Post</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-section reveal">
+      <div class="join-content">
+        <h2>Interested in Joining?</h2>
+        <p>We'd love to have you! Connect with us to learn about membership, upcoming events, and opportunities.</p>
+        <div class="join-buttons reveal-group">
+          <a href="contact.html" class="btn-primary">Get in Touch</a>
+          <a href="events.html" class="btn-secondary">View Events</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" aria-hidden="true">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <h3>🍪 Cookies & Privacy</h3>
+          <p>
+            We use cookies to remember your preferences and improve your
+            FutureMotion experience.
+          </p>
+        </div>
+
+        <div class="cookie-actions">
+          <button id="declineCookies" class="cookie-btn cookie-decline">
+            Decline
+          </button>
+
+          <button id="acceptCookies" class="cookie-btn cookie-accept">
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 <span class="accent">FutureMotion Club</span> — Animation • Multimedia • Creativity</p>
+    </footer>
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Back to top">↑</button>
+
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var twitterButton = document.querySelector(".twitter-share-button");
+      if (twitterButton) {
+        var shareUrl = window.location.href;
+        twitterButton.href =
+          "https://twitter.com/intent/tweet?text=Discover%20FutureMotion%20Club&url=" +
+          encodeURIComponent(shareUrl);
+      }
+    });
+  </script>
+  <script src="js/reveal.js" defer></script>
+  <script src="js/repeat-reveal.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/cookies.js"></script>
+  <script>
+    window.fbAsyncInit = function () { if (window.FB) { FB.init({ xfbml: true, version: "v23.0" }); } };
+  </script>
+</body>
+
+</html>

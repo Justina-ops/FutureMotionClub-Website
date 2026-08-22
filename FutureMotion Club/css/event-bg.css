@@ -1,0 +1,897 @@
+/* ================================================================
+   FUTUREMOTION — FUTURISTIC BACKGROUND
+   Cyber / Galaxy Edition
+================================================================ */
+
+
+/* ================================================================
+   1. BASE
+================================================================ */
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--bg);
+    color: var(--white);
+    isolation: isolate;
+}
+
+
+/* ================================================================
+   2. MAIN FUTURISTIC GALAXY
+================================================================ */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    pointer-events: none;
+    border-radius: 50%;
+    background:
+        /* Central energy core */
+        radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(0, 191, 255, 0.50) 4%,
+            rgba(0, 191, 255, 0.22) 12%,
+            rgba(0, 191, 255, 0.07) 22%,
+            transparent 34%),
+        /* Rotating galaxy arms */
+        conic-gradient(from 0deg,
+            transparent 0deg,
+            rgba(0, 191, 255, 0.08) 25deg,
+            rgba(0, 191, 255, 0.38) 55deg,
+            transparent 90deg,
+            transparent 130deg,
+            rgba(0, 191, 255, 0.28) 175deg,
+            transparent 220deg,
+            rgba(255, 255, 255, 0.08) 260deg,
+            transparent 300deg,
+            rgba(0, 191, 255, 0.32) 340deg,
+            transparent 360deg);
+    filter:
+        blur(20px) drop-shadow(0 0 30px rgba(0, 191, 255, 0.22));
+    opacity: 0.72;
+    animation:
+        galaxyRotate 24s linear infinite,
+        galaxyPulse 7s ease-in-out infinite alternate;
+}
+
+
+/* ================================================================
+   3. GALAXY ANIMATIONS
+================================================================ */
+
+@keyframes galaxyRotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes galaxyPulse {
+    0% {
+        opacity: 0.58;
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    50% {
+        opacity: 0.76;
+    }
+
+    100% {
+        opacity: 0.62;
+        transform: translate(-50%, -50%) scale(1.04);
+    }
+}
+
+
+/* ================================================================
+   4. SHOOTING STARS
+================================================================ */
+
+.future-shooting-star {
+    position: fixed;
+    width: 150px;
+    height: 2px;
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 191, 255, 0.18) 15%,
+            rgba(0, 191, 255, 0.65) 55%,
+            rgba(255, 255, 255, 0.90) 100%);
+    border-radius: 999px;
+    box-shadow:
+        0 0 6px rgba(0, 191, 255, 0.55),
+        0 0 15px rgba(0, 191, 255, 0.38),
+        0 0 30px rgba(0, 191, 255, 0.20);
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+    animation: cyanShoot 7s infinite ease-in;
+}
+
+
+/* ================================================================
+   5. SHOOTING STAR POSITIONS
+================================================================ */
+
+.future-shooting-star:nth-of-type(1) {
+    top: 12%;
+    left: -180px;
+    animation-delay: 0s;
+}
+
+.future-shooting-star:nth-of-type(2) {
+    top: 25%;
+    left: -180px;
+    animation-delay: 2.2s;
+}
+
+.future-shooting-star:nth-of-type(3) {
+    top: 38%;
+    left: -180px;
+    animation-delay: 4.4s;
+}
+
+.future-shooting-star:nth-of-type(4) {
+    top: 50%;
+    left: -180px;
+    animation-delay: 6.6s;
+}
+
+.future-shooting-star:nth-of-type(5) {
+    top: 62%;
+    left: -180px;
+    animation-delay: 8.8s;
+}
+
+.future-shooting-star:nth-of-type(6) {
+    top: 73%;
+    left: -180px;
+    animation-delay: 11s;
+}
+
+.future-shooting-star:nth-of-type(7) {
+    top: 84%;
+    left: -180px;
+    animation-delay: 13.2s;
+}
+
+
+/* ================================================================
+   6. SHOOTING STAR SIZES
+================================================================ */
+
+.future-shooting-star:nth-of-type(2),
+.future-shooting-star:nth-of-type(5) {
+    width: 110px;
+    height: 2px;
+}
+
+.future-shooting-star:nth-of-type(3),
+.future-shooting-star:nth-of-type(7) {
+    width: 190px;
+    height: 3px;
+}
+
+
+/* ================================================================
+   7. SHOOTING STAR SPEED
+================================================================ */
+
+.future-shooting-star:nth-of-type(2),
+.future-shooting-star:nth-of-type(6) {
+    animation-duration: 5s;
+}
+
+.future-shooting-star:nth-of-type(3),
+.future-shooting-star:nth-of-type(7) {
+    animation-duration: 7.5s;
+}
+
+
+/* ================================================================
+   8. SHOOTING STAR ANIMATION
+================================================================ */
+
+@keyframes cyanShoot {
+    0% {
+        transform: translateX(0) translateY(0) rotate(25deg);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0.85;
+    }
+
+    45% {
+        opacity: 0.85;
+    }
+
+    70% {
+        opacity: 0.40;
+    }
+
+    100% {
+        transform: translateX(125vw) translateY(45vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+
+/* ================================================================
+   9. STAR FIELD
+================================================================ */
+
+.future-sparkles {
+    position: fixed;
+    inset: 0;
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -2;
+    box-shadow:
+        /* TOP */
+        5vw 10vh 2px rgba(0, 191, 255, 0.45),
+        12vw 18vh 1px rgba(255, 255, 255, 0.50),
+        19vw 8vh 2px rgba(0, 191, 255, 0.40),
+        27vw 16vh 1px rgba(255, 255, 255, 0.42),
+        34vw 6vh 2px rgba(0, 191, 255, 0.45),
+        42vw 20vh 1px rgba(0, 191, 255, 0.38),
+        51vw 11vh 2px rgba(255, 255, 255, 0.48),
+        59vw 7vh 1px rgba(0, 191, 255, 0.42),
+        67vw 17vh 2px rgba(0, 191, 255, 0.40),
+        75vw 9vh 1px rgba(255, 255, 255, 0.45),
+        84vw 21vh 2px rgba(0, 191, 255, 0.42),
+        93vw 13vh 1px rgba(0, 191, 255, 0.38),
+        /* MIDDLE */
+        8vw 32vh 1px rgba(0, 191, 255, 0.40),
+        16vw 42vh 2px rgba(255, 255, 255, 0.42),
+        24vw 29vh 1px rgba(0, 191, 255, 0.38),
+        32vw 48vh 2px rgba(0, 191, 255, 0.42),
+        40vw 34vh 1px rgba(255, 255, 255, 0.38),
+        48vw 44vh 2px rgba(0, 191, 255, 0.42),
+        57vw 31vh 1px rgba(0, 191, 255, 0.40),
+        65vw 46vh 2px rgba(255, 255, 255, 0.42),
+        73vw 36vh 1px rgba(0, 191, 255, 0.40),
+        81vw 49vh 2px rgba(0, 191, 255, 0.38),
+        90vw 33vh 1px rgba(255, 255, 255, 0.40),
+        /* BOTTOM */
+        4vw 62vh 2px rgba(0, 191, 255, 0.42),
+        13vw 75vh 1px rgba(255, 255, 255, 0.40),
+        21vw 67vh 2px rgba(0, 191, 255, 0.42),
+        30vw 82vh 1px rgba(0, 191, 255, 0.38),
+        38vw 72vh 2px rgba(255, 255, 255, 0.40),
+        46vw 90vh 1px rgba(0, 191, 255, 0.42),
+        55vw 70vh 2px rgba(0, 191, 255, 0.40),
+        63vw 84vh 1px rgba(255, 255, 255, 0.38),
+        71vw 76vh 2px rgba(0, 191, 255, 0.42),
+        80vw 91vh 1px rgba(0, 191, 255, 0.38),
+        88vw 68vh 2px rgba(255, 255, 255, 0.40),
+        96vw 82vh 1px rgba(0, 191, 255, 0.42);
+    animation: sparkleTwinkle 4.5s infinite ease-in-out;
+}
+
+
+/* ================================================================
+   10. SPARKLE GLOW
+================================================================ */
+
+.future-sparkles::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 191, 255, 0.38);
+    box-shadow:
+        0 0 6px rgba(0, 191, 255, 0.35),
+        0 0 14px rgba(0, 191, 255, 0.20);
+    animation: sparkleGlow 3.5s infinite ease-in-out;
+}
+
+
+/* ================================================================
+   11. SPARKLE ANIMATIONS
+================================================================ */
+
+@keyframes sparkleTwinkle {
+    0% {
+        opacity: 0.30;
+        transform: scale(0.75);
+    }
+
+    25% {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.40;
+    }
+
+    75% {
+        opacity: 0.90;
+        transform: scale(1.12);
+    }
+
+    100% {
+        opacity: 0.30;
+        transform: scale(0.75);
+    }
+}
+
+@keyframes sparkleGlow {
+
+    0%,
+    100% {
+        opacity: 0.18;
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+}
+
+
+/* ================================================================
+   12. FUTURISTIC PERSPECTIVE GRID
+================================================================ */
+
+.future-grid {
+    position: fixed;
+    left: 0;
+    bottom: -20vh;
+    width: 100%;
+    height: 55vh;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.28;
+    background:
+        linear-gradient(rgba(0, 191, 255, 0.22) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 191, 255, 0.22) 1px, transparent 1px);
+    background-size: 65px 65px;
+    transform: perspective(500px) rotateX(60deg);
+    transform-origin: bottom;
+    mask-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.85) 35%, transparent 90%);
+    -webkit-mask-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.85) 35%, transparent 90%);
+    animation: gridMove 9s linear infinite;
+}
+
+@keyframes gridMove {
+    from {
+        background-position: 0 0, 0 0;
+    }
+
+    to {
+        background-position: 0 65px, 65px 0;
+    }
+}
+
+
+/* ================================================================
+   13. FLOATING PARTICLES
+================================================================ */
+
+.future-particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.future-particles::before,
+.future-particles::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgba(0, 191, 255, 0.55);
+    box-shadow:
+        10vw 20vh 0 rgba(0, 191, 255, 0.35),
+        25vw 70vh 0 rgba(255, 255, 255, 0.32),
+        40vw 35vh 0 rgba(0, 191, 255, 0.30),
+        55vw 80vh 0 rgba(255, 255, 255, 0.28),
+        70vw 25vh 0 rgba(0, 191, 255, 0.34),
+        85vw 65vh 0 rgba(0, 191, 255, 0.30),
+        15vw 50vh 0 rgba(255, 255, 255, 0.28),
+        33vw 15vh 0 rgba(0, 191, 255, 0.30),
+        62vw 60vh 0 rgba(0, 191, 255, 0.34),
+        92vw 40vh 0 rgba(255, 255, 255, 0.26),
+        6vw 85vh 0 rgba(0, 191, 255, 0.28),
+        78vw 52vh 0 rgba(0, 191, 255, 0.30);
+    animation: particleFloat 15s ease-in-out infinite alternate;
+}
+
+.future-particles::after {
+    transform: scale(1.6);
+    opacity: 0.65;
+    animation: particleFloat 21s ease-in-out infinite alternate;
+    animation-delay: -8s;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translate3d(0, 25px, 0);
+        opacity: 0.20;
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+
+    100% {
+        transform: translate3d(35px, -40px, 0);
+        opacity: 0.20;
+    }
+}
+
+
+/* ================================================================
+   14. SCANNING BEAM
+================================================================ */
+
+.future-scanline {
+    position: fixed;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 2px;
+    background:
+        linear-gradient(90deg,
+            transparent,
+            rgba(0, 191, 255, 0.35),
+            rgba(255, 255, 255, 0.70),
+            rgba(0, 191, 255, 0.35),
+            transparent);
+    box-shadow:
+        0 0 8px rgba(0, 191, 255, 0.35),
+        0 0 20px rgba(0, 191, 255, 0.15);
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0.50;
+    animation: scanDown 10s linear infinite;
+}
+
+@keyframes scanDown {
+    0% {
+        transform: translateY(-10vh);
+    }
+
+    100% {
+        transform: translateY(120vh);
+    }
+}
+
+
+/* ================================================================
+   15. FUTURISTIC HUD CORNERS
+================================================================ */
+
+.future-hud {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.42;
+}
+
+
+/* Main HUD frame */
+
+.future-hud::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-top: 1px solid rgba(0, 191, 255, 0.48);
+    border-left: 1px solid rgba(0, 191, 255, 0.48);
+    box-shadow: -4px -4px 12px rgba(0, 191, 255, 0.08);
+}
+
+
+/* HUD glowing node */
+
+.future-hud::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    left: -4px;
+    border-radius: 50%;
+    background: rgba(0, 191, 255, 0.70);
+    box-shadow:
+        0 0 8px rgba(0, 191, 255, 0.55),
+        0 0 18px rgba(0, 191, 255, 0.22);
+    animation: hudPulse 2.5s ease-in-out infinite;
+}
+
+
+/* ================================================================
+   16. HUD POSITIONS
+================================================================ */
+
+.hud-top-left {
+    top: 110px;
+    left: 25px;
+}
+
+.hud-top-right {
+    top: 110px;
+    right: 25px;
+    transform: scaleX(-1);
+}
+
+.hud-bottom-left {
+    bottom: 30px;
+    left: 25px;
+    transform: scaleY(-1);
+}
+
+.hud-bottom-right {
+    right: 25px;
+    bottom: 30px;
+    transform: scale(-1, -1);
+}
+
+
+/* ================================================================
+   17. HUD PULSE ANIMATION
+================================================================ */
+
+@keyframes hudPulse {
+
+    0%,
+    100% {
+        opacity: 0.30;
+        transform: scale(0.80);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.20);
+    }
+}
+
+
+/* ================================================================
+   18. EDGE CIRCUIT EFFECT
+================================================================ */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+        /* Right vertical circuit */
+        linear-gradient(90deg,
+            transparent 0%,
+            transparent 93.5%,
+            rgba(0, 191, 255, 0.055) 93.5%,
+            rgba(0, 191, 255, 0.055) 93.7%,
+            transparent 93.7%),
+        /* Bottom horizontal circuit */
+        linear-gradient(0deg,
+            transparent 0%,
+            transparent 91.5%,
+            rgba(0, 191, 255, 0.045) 91.5%,
+            rgba(0, 191, 255, 0.045) 91.7%,
+            transparent 91.7%);
+    opacity: 0.85;
+}
+
+
+/* ================================================================
+   19. CONTENT PROTECTION
+================================================================ */
+
+main,
+section,
+.hero {
+    position: relative;
+}
+
+
+/* ================================================================
+   20. LIGHT MODE — BASE
+================================================================ */
+
+[data-theme="light"] body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+/* ================================================================
+   21. LIGHT MODE — GALAXY
+================================================================ */
+
+[data-theme="light"] body::before {
+    width: 1000px;
+    height: 1000px;
+    background:
+        radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.92) 0%,
+            rgba(0, 144, 199, 0.38) 4%,
+            rgba(0, 144, 199, 0.15) 12%,
+            rgba(0, 144, 199, 0.05) 22%,
+            transparent 34%),
+        conic-gradient(from 0deg,
+            transparent 0deg,
+            rgba(0, 144, 199, 0.035) 25deg,
+            rgba(0, 144, 199, 0.22) 55deg,
+            transparent 90deg,
+            transparent 130deg,
+            rgba(0, 144, 199, 0.16) 175deg,
+            transparent 220deg,
+            rgba(80, 90, 100, 0.05) 260deg,
+            transparent 300deg,
+            rgba(0, 144, 199, 0.18) 340deg,
+            transparent 360deg);
+    filter: blur(22px) drop-shadow(0 0 25px rgba(0, 144, 199, 0.12));
+    opacity: 0.68;
+    animation:
+        galaxyRotate 26s linear infinite,
+        galaxyPulseLight 8s ease-in-out infinite alternate;
+}
+
+@keyframes galaxyPulseLight {
+    0% {
+        opacity: 0.48;
+        transform: translate(-50%, -50%) scale(0.96);
+    }
+
+    50% {
+        opacity: 0.68;
+    }
+
+    100% {
+        opacity: 0.52;
+        transform: translate(-50%, -50%) scale(1.03);
+    }
+}
+
+
+/* ================================================================
+   22. LIGHT MODE — SHOOTING STARS
+================================================================ */
+
+[data-theme="light"] .future-shooting-star {
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 144, 199, 0.14) 15%,
+            rgba(0, 144, 199, 0.55) 55%,
+            rgba(255, 255, 255, 0.90) 100%);
+    box-shadow:
+        0 0 5px rgba(0, 144, 199, 0.35),
+        0 0 12px rgba(0, 144, 199, 0.24),
+        0 0 25px rgba(0, 144, 199, 0.12);
+}
+
+
+/* ================================================================
+   23. LIGHT MODE — SPARKLES
+================================================================ */
+
+[data-theme="light"] .future-sparkles {
+    background: rgba(0, 144, 199, 0.45);
+    box-shadow:
+        5vw 10vh 2px rgba(0, 144, 199, 0.38),
+        12vw 18vh 1px rgba(80, 90, 100, 0.28),
+        19vw 8vh 2px rgba(0, 144, 199, 0.35),
+        27vw 16vh 1px rgba(80, 90, 100, 0.24),
+        34vw 6vh 2px rgba(0, 144, 199, 0.38),
+        42vw 20vh 1px rgba(0, 144, 199, 0.32),
+        51vw 11vh 2px rgba(80, 90, 100, 0.24),
+        59vw 7vh 1px rgba(0, 144, 199, 0.35),
+        67vw 17vh 2px rgba(0, 144, 199, 0.38),
+        75vw 9vh 1px rgba(80, 90, 100, 0.24),
+        84vw 21vh 2px rgba(0, 144, 199, 0.35),
+        93vw 13vh 1px rgba(0, 144, 199, 0.32),
+        8vw 32vh 1px rgba(0, 144, 199, 0.32),
+        16vw 42vh 2px rgba(80, 90, 100, 0.24),
+        24vw 29vh 1px rgba(0, 144, 199, 0.35),
+        32vw 48vh 2px rgba(0, 144, 199, 0.32),
+        40vw 34vh 1px rgba(80, 90, 100, 0.24),
+        48vw 44vh 2px rgba(0, 144, 199, 0.35),
+        57vw 31vh 1px rgba(0, 144, 199, 0.32),
+        65vw 46vh 2px rgba(80, 90, 100, 0.24),
+        73vw 36vh 1px rgba(0, 144, 199, 0.35),
+        81vw 49vh 2px rgba(0, 144, 199, 0.30),
+        90vw 33vh 1px rgba(80, 90, 100, 0.24),
+        4vw 62vh 2px rgba(0, 144, 199, 0.35),
+        13vw 75vh 1px rgba(80, 90, 100, 0.24),
+        21vw 67vh 2px rgba(0, 144, 199, 0.35),
+        30vw 82vh 1px rgba(0, 144, 199, 0.32),
+        38vw 72vh 2px rgba(80, 90, 100, 0.24),
+        46vw 90vh 1px rgba(0, 144, 199, 0.32),
+        55vw 70vh 2px rgba(0, 144, 199, 0.35),
+        63vw 84vh 1px rgba(80, 90, 100, 0.24),
+        71vw 76vh 2px rgba(0, 144, 199, 0.35),
+        80vw 91vh 1px rgba(0, 144, 199, 0.30),
+        88vw 68vh 2px rgba(80, 90, 100, 0.24),
+        96vw 82vh 1px rgba(0, 144, 199, 0.32);
+}
+
+[data-theme="light"] .future-sparkles::before {
+    background: rgba(0, 144, 199, 0.25);
+    box-shadow:
+        0 0 5px rgba(0, 144, 199, 0.25),
+        0 0 12px rgba(0, 144, 199, 0.14);
+}
+
+
+/* ================================================================
+   24. LIGHT MODE — GRID
+================================================================ */
+
+[data-theme="light"] .future-grid {
+    opacity: 0.16;
+    background:
+        linear-gradient(rgba(0, 144, 199, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 144, 199, 0.18) 1px, transparent 1px);
+}
+
+
+/* ================================================================
+   25. LIGHT MODE — PARTICLES
+================================================================ */
+
+[data-theme="light"] .future-particles::before,
+[data-theme="light"] .future-particles::after {
+    background: rgba(0, 144, 199, 0.38);
+    box-shadow:
+        10vw 20vh 0 rgba(0, 144, 199, 0.24),
+        25vw 70vh 0 rgba(80, 90, 100, 0.20),
+        40vw 35vh 0 rgba(0, 144, 199, 0.22),
+        55vw 80vh 0 rgba(80, 90, 100, 0.18),
+        70vw 25vh 0 rgba(0, 144, 199, 0.25),
+        85vw 65vh 0 rgba(0, 144, 199, 0.22),
+        15vw 50vh 0 rgba(80, 90, 100, 0.18),
+        33vw 15vh 0 rgba(0, 144, 199, 0.22),
+        62vw 60vh 0 rgba(0, 144, 199, 0.25),
+        92vw 40vh 0 rgba(80, 90, 100, 0.18);
+}
+
+
+/* ================================================================
+   26. LIGHT MODE — SCANLINE
+================================================================ */
+
+[data-theme="light"] .future-scanline {
+    background:
+        linear-gradient(90deg,
+            transparent,
+            rgba(0, 144, 199, 0.18),
+            rgba(255, 255, 255, 0.75),
+            rgba(0, 144, 199, 0.18),
+            transparent);
+    box-shadow: 0 0 10px rgba(0, 144, 199, 0.18);
+    opacity: 0.32;
+}
+
+
+/* ================================================================
+   27. LIGHT MODE — HUD
+================================================================ */
+
+[data-theme="light"] .future-hud {
+    opacity: 0.32;
+}
+
+[data-theme="light"] .future-hud::before {
+    border-top-color: rgba(0, 144, 199, 0.40);
+    border-left-color: rgba(0, 144, 199, 0.40);
+    box-shadow: -4px -4px 12px rgba(0, 144, 199, 0.06);
+}
+
+[data-theme="light"] .future-hud::after {
+    background: rgba(0, 144, 199, 0.55);
+    box-shadow:
+        0 0 8px rgba(0, 144, 199, 0.30),
+        0 0 16px rgba(0, 144, 199, 0.12);
+}
+
+
+/* ================================================================
+   28. LIGHT MODE — CARDS
+================================================================ */
+
+[data-theme="light"] .card,
+[data-theme="light"] .event-card,
+[data-theme="light"] .tutorial-card {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================================================================
+   29. LIGHT MODE — SELECTION
+================================================================ */
+
+[data-theme="light"] ::selection {
+    background: rgba(0, 144, 199, 0.20);
+    color: #101418;
+}
+
+
+/* ================================================================
+   30. MOBILE
+================================================================ */
+
+@media (max-width: 768px) {
+    body::before {
+        width: 700px;
+        height: 700px;
+    }
+
+    .future-grid {
+        height: 42vh;
+        background-size: 50px 50px;
+        opacity: 0.22;
+    }
+
+    .future-hud {
+        width: 45px;
+        height: 45px;
+        opacity: 0.28;
+    }
+
+    .hud-top-left,
+    .hud-top-right {
+        top: 90px;
+    }
+
+    .hud-top-left,
+    .hud-bottom-left {
+        left: 12px;
+    }
+
+    .hud-top-right,
+    .hud-bottom-right {
+        right: 12px;
+    }
+
+    .future-scanline {
+        opacity: 0.35;
+    }
+}
+
+
+/* ================================================================
+   31. REDUCED MOTION
+================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .future-shooting-star,
+    .future-sparkles,
+    .future-grid,
+    .future-particles::before,
+    .future-particles::after,
+    .future-scanline,
+    .future-hud::after,
+    body::before {
+        animation: none !important;
+    }
+}
+
+
+/* ================================================================
+   END — FUTUREMOTION BACKGROUND
+================================================================ */
