@@ -32,6 +32,15 @@ The website brings together club information, creative projects, artwork, tutori
 | Multimedia | Showcases multimedia content |
 | Contact | Provides contact information |
 
+## Contributors
+
+| Team Member | Contributions |
+| --- | --- |
+| Sek Siang Wee | Design and documentation for the Home and About pages |
+| Liew Jia Min | Site map, wireframes, mockups and user guides for the Projects and Gallery pages |
+| Yew Kai Qian | Design and documentation for the Tutorials and Events pages |
+| Leong Di Hao | Design and documentation for the Multimedia and Contact pages |
+
 ## My Contributions
 
 - Created the site map for the eight-page website.
