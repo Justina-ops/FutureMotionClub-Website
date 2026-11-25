@@ -4,7 +4,7 @@ An eight-page website for an animation and multimedia club, developed as a group
 
 ## Live Website
 
-[Visit FutureMotion Club](https://justina-ops.github.io/FutureMotion-Club/)
+[Visit FutureMotion Club](https://justina-ops.github.io/FutureMotionClub-Website/)
 
 ## Overview
 
